@@ -44,8 +44,6 @@ function CenterPanel() {
                   </Link>
                   <div className="flex items-center gap-x-2 font-RubikBold mt-2">
                      <p className="bg-[#282828] w-fit text-neutral-300 rounded-md px-2 h-5 flex items-center justify-center text-[11px] ">TypeScript</p>
-                     <div className="w-1 h-1 rounded-full bg-neutral-400" />
-                     <span className="text-xs">Sunday, July 22, 2023</span>
                   </div>
                </div>
 
@@ -55,8 +53,6 @@ function CenterPanel() {
                   </Link>
                   <div className="flex items-center gap-x-2 font-RubikBold mt-2">
                      <p className="bg-[#282828] w-fit text-neutral-300 rounded-md px-2 h-5 flex items-center justify-center text-[11px]">TailwindCSS</p>
-                     <div className="w-1 h-1 rounded-full bg-neutral-400" />
-                     <span className="text-xs">Thursday, November 4, 2022</span>
                   </div>
                </div>
                {/* end posts */}

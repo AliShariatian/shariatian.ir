@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
    return (
-      <html lang="en">
+      <html lang="en" dir="rtl">
          <body>
             <Theming>
                <div className="w-full lg:w-11/12 mx-auto xl:w-9/12 lg:mx-auto lg:max-w-[78rem] grid grid-cols-12 gap-3 my-5">

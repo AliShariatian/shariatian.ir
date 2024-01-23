@@ -56,7 +56,9 @@ function LeftPanel() {
                </div>
 
                <h1 className="font-RubikExtraBold text-xl text-neutral-300 mt-3">Ali Shariatian</h1>
-               <p className="text-xs font-RubikMedium text-neutral-300 mt-2">shariatian92@gmail.com</p>
+               <a className="text-xs font-RubikMedium text-neutral-300 mt-2" href="mailto:shariatian92@gmail.com">
+                  shariatian92@gmail.com
+               </a>
 
                <div className="flex w-full">
                   <div className="flex flex-wrap gap-[0.35rem] text-xs my-4">
