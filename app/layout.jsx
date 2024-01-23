@@ -11,9 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
    return (
       <html lang="en">
-         <body className="">
+         <body>
             <Theming>
-               <div className="w-full lg:w-11/12 mx-auto xl:w-9/12 lg:mx-auto lg:max-w-[78rem] grid grid-cols-12 gap-3 mt-5">
+               <div className="w-full lg:w-11/12 mx-auto xl:w-9/12 lg:mx-auto lg:max-w-[78rem] grid grid-cols-12 gap-3 my-5">
                   <div className="hidden lg:block lg:col-start-1 lg:col-end-4 w-full">
                      <LeftPanel />
                   </div>

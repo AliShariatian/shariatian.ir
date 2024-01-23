@@ -13,14 +13,14 @@ function CenterPanel() {
             opacity: 1,
             transition: {
                duration: 0.8,
-               delay: 0.6,
+               delay: 0,
                type: "spring",
                stiffness: 200,
             },
          }}
          className="w-full"
       >
-         <section className="bg-[#1C1C1C] lg:bg-transparent rounded-2xl">
+         <section className="bg-[#171717] rounded-2xl">
             <div className="flex gap-x-6 p-4">
                <PiCodeThin className="text-6xl text-neutral-50" />
                <div>

@@ -9,14 +9,14 @@ import Image from "next/image";
 function SinglePostPage() {
    return (
       <motion.div
-         className="text-neutral-50 "
+         className="text-neutral-50"
          initial={{ y: 100, opacity: 0 }}
          animate={{
             y: 0,
             opacity: 1,
             transition: {
                duration: 0.8,
-               delay: 0.9,
+               delay: 0,
                type: "spring",
                stiffness: 200,
             },
@@ -48,12 +48,12 @@ function SinglePostPage() {
                   filter: "blur(0px)",
                   transition: {
                      duration: 0.8,
-                     delay: 0.9,
+                     delay: 0.2,
                      type: "spring",
                      stiffness: 200,
                   },
                }}
-               transition={{ delay: 0.4 }}
+               transition={{ delay: 0 }}
                className="text-3xl font-RubikExtraBold text-center"
             >
                How to write type-safe CSS Modules

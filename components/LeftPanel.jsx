@@ -1,11 +1,8 @@
 "use client";
-import { PiBookOpenTextLight, PiGoogleLogoThin, PiTwitterLogoLight, PiMagicWandThin, PiShapesThin, PiHouseLight } from "react-icons/pi";
-import { SiAdobe } from "react-icons/si";
-
+import { PiBookOpenTextLight, PiHouseLight } from "react-icons/pi";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import TestimonialTooltip from "./Social/page";
 import Social from "./Social/page";
 // import EmailSubscribe from "./EmailSubscribe/EmailSubscribe";
 
@@ -16,6 +13,7 @@ function LeftPanel() {
       { label: "Redux" },
       { label: "TypeScript" },
       { label: "TailwindCSS" },
+      { label: "FramerMotion" },
       { label: "HTML" },
       { label: "CSS" },
       { label: "JavaScript" },
@@ -31,7 +29,10 @@ function LeftPanel() {
             opacity: 1,
             transition: { duration: 0.3, type: "spring", stiffness: 200 },
          }}
-         className="h-fit sticky top-5"
+         drag
+         dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+         dragElastic={0.8}
+         className="h-fit sticky top-5 z-20"
       >
          <div className="w-full p-3 border border-neutral-800 rounded-2xl h-full bg-[#1C1C1C]">
             <div className="w-full">
@@ -39,6 +40,7 @@ function LeftPanel() {
                   <Link href="/" title="Ali Shariatian" alt="Ali Shariatian">
                      <Image width={1000} height={1000} className="size-28 border border-neutral-800 rounded-full object-cover shadow-xl" src="/avatar.jpg" alt="ali shariatian" />
                   </Link>
+
                   <div className="flex gap-x-1 h-fit">
                      <Link href="/">
                         <div title="Home" className="bg-neutral-700/50 h-7 w-7 rounded-full flex items-center justify-center">
@@ -54,10 +56,10 @@ function LeftPanel() {
                </div>
 
                <h1 className="font-RubikExtraBold text-xl text-neutral-300 mt-3">Ali Shariatian</h1>
-               <p className="text-xs font-RubikMedium text-neutral-300 mt-2">shariatian92@gmail.com 📧</p>
+               <p className="text-xs font-RubikMedium text-neutral-300 mt-2">shariatian92@gmail.com</p>
 
                <div className="flex w-full">
-                  <div className="flex flex-wrap gap-1 text-xs my-4">
+                  <div className="flex flex-wrap gap-[0.35rem] text-xs my-4">
                      {skills.map((item) => (
                         <p key={item.label} className="bg-[#282828] text-neutral-300 rounded-md px-2 h-5 flex items-center justify-center text-[11px] font-RubikBold">
                            {item.label}
