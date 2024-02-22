@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function Social() {
+function Social({ scale = 20 }) {
    const socials = [
       {
          name: "Linkedin",
@@ -33,7 +33,7 @@ function Social() {
       <>
          {socials.map((social) => (
             <a href={social.link} key={social.name} target="_blank" className="hover-scale opacity-90">
-               <Image src={social.src} width={20} height={20} alt={`Ali Shariatian ${social.name}`} title={`My ${social.name}`} className="invert cursor-pointer" />
+               <Image src={social.src} width={scale} height={scale} alt={`Ali Shariatian ${social.name}`} title={`My ${social.name}`} className="invert cursor-pointer" />
             </a>
          ))}
       </>

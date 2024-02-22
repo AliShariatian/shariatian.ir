@@ -1,27 +1,55 @@
+import localFont from "next/font/local";
 import "./globals.css";
-import Theming from "@/components/providers/Theme";
-import LeftPanel from "@/components/LeftPanel";
-// import RightPanel from "@/components/RightPanel";
+
+// Heading font
+const morabbaFont = localFont({ src: "../public/font/Morabba-Medium.ttf", variable: "--font-morabba" });
+// Body font
+const danaFont = localFont({
+   src: [
+      {
+         path: "../public/font/DanaFaNum-Light.ttf",
+         weight: "300",
+         style: "normal",
+         variable: "--font-dana",
+      },
+      {
+         path: "../public/font/DanaFaNum-Regular.ttf",
+         weight: "400",
+         style: "normal",
+         variable: "--font-dana",
+      },
+      {
+         path: "../public/font/DanaFaNum-Medium.ttf",
+         weight: "500",
+         style: "normal",
+         variable: "--font-dana",
+      },
+      {
+         path: "../public/font/DanaFaNum-DemiBold.ttf",
+         weight: "600",
+         style: "normal",
+         variable: "--font-dana",
+      },
+      {
+         path: "../public/font/DanaFaNum-Bold.ttf",
+         weight: "700",
+         style: "normal",
+         variable: "--font-dana",
+      },
+   ],
+});
 
 export const metadata = {
    title: "Ali Shariatian | Front-end Developer",
    description: "Ali Shariatian, a front-end developer blog",
 };
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
    return (
-      <html lang="en" dir="rtl">
-         <body>
-            <Theming>
-               <div className="w-full lg:w-11/12 mx-auto xl:w-9/12 lg:mx-auto lg:max-w-[78rem] grid grid-cols-12 gap-3 my-5">
-                  <div className="hidden lg:block lg:col-start-1 lg:col-end-4 w-full">
-                     <LeftPanel />
-                  </div>
-                  <div className="col-start-1 col-end-13 lg:col-start-4 mx-auto w-11/12 lg:w-full">{children}</div>
-                  {/* <div><RightPanel /></div> */}
-               </div>
-            </Theming>
-         </body>
+      <html lang="fa" dir="rtl" className="h-full">
+         <body className={`${danaFont.className} ${morabbaFont.variable} h-full bg-slate-950 text-slate-100 transition-all ease-in duration-200`}>{children}</body>
       </html>
    );
-}
+};
+
+export default RootLayout;
