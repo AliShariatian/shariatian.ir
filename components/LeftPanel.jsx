@@ -1,9 +1,10 @@
 "use client";
+
 import { PiBookOpenTextLight, PiHouseLight } from "react-icons/pi";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import Social from "./Social/page";
+import Social from "./Social";
 // import EmailSubscribe from "./EmailSubscribe/EmailSubscribe";
 
 function LeftPanel() {
@@ -79,44 +80,6 @@ function LeftPanel() {
                <p className="text-[12px]  font-RubikRegular my-3">
                   The world of digital design and <br /> development is constantly evolving and so <br /> has my role over the last 7 years.{" "}
                </p>
-
-               {/* ---experience--- */}
-               {/* <div className="mt-6 flex justify-between text-sm">
-                  <div className="flex items-center gap-x-1">
-                     <PiShapesThin />
-                     <span className="text-xs font-RubikRegular">7 Years as a Developer</span>
-                  </div>
-                  <div className="flex items-center gap-x-1">
-                     <PiMagicWandThin />
-                     <span className="text-xs font-RubikRegular">24 Projects</span>
-                  </div>
-               </div> */}
-
-               {/* ---experience detail--- */}
-               {/* <div className="border border-[#282828] text-neutral-300 my-6" />
-               <div className="my-4">
-                  <h1 className="font-RubikRegular">Work History</h1>
-                  <div className="mt-7 flex  justify-between">
-                     <div className="flex gap-x-3">
-                        <PiGoogleLogoThin className="text-xl" />
-                        <div className="-mt-1">
-                           <h3 className="text-sm font-RubikMedium">Sr. Developer</h3>
-                           <p className="text-[9px]">Google</p>
-                        </div>
-                     </div>
-                     <small className="text-[9px] text-neutral-300">January 2020 - Current</small>
-                  </div>
-                  <div className="my-3 flex  justify-between">
-                     <div className="flex gap-x-3">
-                        <SiAdobe className="text-xl" />
-                        <div className="-mt-1">
-                           <h3 className="text-sm font-RubikMedium">Jr. Creative Dev</h3>
-                           <p className="text-[9px]">Adobe</p>
-                        </div>
-                     </div>
-                     <small className="text-[9px] text-neutral-300">Sep 2016 - January 2020</small>
-                  </div>
-               </div> */}
             </div>
 
             <div className="border border-neutral-800 my-5" />

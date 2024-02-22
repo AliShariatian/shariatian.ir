@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
+import PageTransition from "@/components/PageTransition";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 // Heading font
 const morabbaFont = localFont({ src: "../public/font/Morabba-Medium.ttf", variable: "--font-morabba" });
@@ -47,7 +49,10 @@ export const metadata = {
 const RootLayout = ({ children }) => {
    return (
       <html lang="fa" dir="rtl" className="h-full">
-         <body className={`${danaFont.className} ${morabbaFont.variable} h-full bg-slate-950 text-slate-100 transition-all ease-in duration-200`}>{children}</body>
+         <body className={`${danaFont.className} ${morabbaFont.variable} overflow-hidden h-full bg-slate-950 text-slate-100 transition-all ease-in duration-200`}>
+            <Navbar />
+            <PageTransition>{children}</PageTransition>
+         </body>
       </html>
    );
 };
