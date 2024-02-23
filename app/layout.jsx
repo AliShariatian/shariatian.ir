@@ -1,8 +1,11 @@
 import localFont from "next/font/local";
 import PageTransition from "@/components/PageTransition";
 import "./globals.css";
+
+// COMPONENTS IMPORT
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
+import { metaTitle } from "@/utils/persianTexts";
 
 // Heading font
 const morabbaFont = localFont({ src: "../public/font/Morabba-Medium.ttf", variable: "--font-morabba" });
@@ -43,8 +46,8 @@ const danaFont = localFont({
 });
 
 export const metadata = {
-   title: "Ali Shariatian | Front-end Developer",
-   description: "Ali Shariatian, a front-end developer blog",
+   title: `${metaTitle} توسعه‌دهنده فرانت‌اند`,
+   description: "توسعه دهنده فرانت اند | برنامه نویس سایت | توسعه دهنده رابط کاربری | طراح سایت",
 };
 
 const RootLayout = ({ children }) => {

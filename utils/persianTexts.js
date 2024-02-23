@@ -1,3 +1,6 @@
+// Metadata
+export const metaTitle = "علی شریعتیان |";
+
 // Navbar
 export const home = "خانه";
 export const aboutMe = "درباره من";

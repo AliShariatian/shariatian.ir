@@ -1,5 +1,10 @@
 import Title from "@/components/common/Title";
-import { BlogsTitle } from "@/utils/persianTexts";
+import { BlogsTitle, metaTitle } from "@/utils/persianTexts";
+
+export const metadata = {
+   title: `${metaTitle} نوشته‌ها`,
+   description: "آموزش برنامه نویسی فرانت اند و طراحی سایت",
+};
 
 const BlogPage = () => {
    return (

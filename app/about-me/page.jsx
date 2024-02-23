@@ -1,5 +1,10 @@
 import Title from "@/components/common/Title";
-import { aboutMeTitle } from "@/utils/persianTexts";
+import { aboutMeTitle, metaTitle } from "@/utils/persianTexts";
+
+export const metadata = {
+   title: `${metaTitle} درباره من`,
+   description: "توسعه دهنده فرانت اند | برنامه نویس سایت | توسعه دهنده رابط کاربری | طراح سایت",
+};
 
 const AboutMePage = () => {
    return (
