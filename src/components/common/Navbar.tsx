@@ -11,7 +11,7 @@ const Navbar: FC = (): JSX.Element => {
    return (
       <nav className="fixed top-0 right-0 w-full bg-slate-950/50 backdrop-blur-md flex items-center h-24 px-28 z-50">
          <ul className="flex justify-center gap-4 mr-20">
-            {navbarItems.map((item, index) => {
+            {navbarItems.map((item, index: number) => {
                {
                   if (index === 1) {
                      return <div key={index} className="w-0 h-6 p-0 mx-2 my-auto border-l border-slate-100/60 opacity-60" />;

@@ -14,39 +14,36 @@ import { metaTitle } from "@/utils/persianTexts";
 const morabbaFont = localFont({ src: "../../public/font/Morabba-Medium.ttf", variable: "--font-morabba" });
 
 // Body font
+
 const danaFont = localFont({
    src: [
       {
          path: "../../public/font/DanaFaNum-Light.ttf",
          weight: "300",
          style: "normal",
-         variable: "--font-dana",
       },
       {
          path: "../../public/font/DanaFaNum-Regular.ttf",
          weight: "400",
          style: "normal",
-         variable: "--font-dana",
       },
       {
          path: "../../public/font/DanaFaNum-Medium.ttf",
          weight: "500",
          style: "normal",
-         variable: "--font-dana",
       },
       {
          path: "../../public/font/DanaFaNum-DemiBold.ttf",
          weight: "600",
          style: "normal",
-         variable: "--font-dana",
       },
       {
          path: "../../public/font/DanaFaNum-Bold.ttf",
          weight: "700",
          style: "normal",
-         variable: "--font-dana",
       },
    ],
+   variable: "--font-dana",
 });
 
 export const metadata: Metadata = {
