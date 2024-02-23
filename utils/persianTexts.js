@@ -5,7 +5,7 @@ export const blog = "نوشته‌ها";
 
 // Home page
 export const aliShariatian = "عــلــی شـــریـعـتـیـان";
-export const description = "توسعه‌دهنده رابط‌ کاربری وبسایت‌های زیبا و دوست‌داشتنی برای خدمات ارزشمند شما";
+export const description = "توسعه‌دهنده رابط‌ کاربری وبسایت‌های دوست‌داشتنی و زیبا برای خدمات ارزشمند شما";
 
 // About me page
 export const aboutMeTitle = "دربـاره مـن";

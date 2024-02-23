@@ -11,7 +11,7 @@ const Footer = () => {
             drag
             dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
             dragElastic={0.8}
-            className="absolute left-9 bottom-9 text-sm cursor-move flex gap-3 items-center opacity-50 hover:opacity-100 transition-opacity"
+            className="absolute left-9 bottom-9 text-sm cursor-default flex gap-3 items-center opacity-50 hover:opacity-100 transition-opacity"
          >
             <div className="flex flex-row-reverse gap-3 items-baseline">
                <Social scale={24} />
