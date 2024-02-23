@@ -54,12 +54,10 @@ export const metadata: Metadata = {
 const RootLayout: FC<PropsWithChildren> = ({ children }): JSX.Element => {
    return (
       <html lang="fa" dir="rtl" className="h-full">
-         <body className={`${danaFont.className} ${morabbaFont.variable} overflow-hidden h-full bg-slate-950 text-slate-100 transition-all ease-in duration-200`}>
+         <body className={`${danaFont.className} ${morabbaFont.variable} relative overflow-hidden h-full bg-slate-950 text-slate-100 transition-all ease-in duration-200`}>
             <Navbar />
-            <PageTransition>
-               {children}
-               <Footer />
-            </PageTransition>
+            <PageTransition>{children}</PageTransition>
+            <Footer />
          </body>
       </html>
    );
