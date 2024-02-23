@@ -2,9 +2,12 @@
 export const metaTitle = "علی شریعتیان |";
 
 // Navbar
-export const home = "خانه";
-export const aboutMe = "درباره من";
-export const blog = "نوشته‌ها";
+export const navbarItems = [
+   { slug: "/", title: "خانه" },
+   { slug: "", title: "" },
+   { slug: "/blogs", title: "نوشته‌ها" },
+   { slug: "/about-me", title: "درباره من" },
+];
 
 // Home page
 export const aliShariatian = "عــلــی شـــریـعـتـیـان";

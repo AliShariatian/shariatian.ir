@@ -6,10 +6,15 @@ export const metadata = {
    description: "آموزش برنامه نویسی فرانت اند و طراحی سایت",
 };
 
+const comingSoon = "بزودی";
+
 const BlogPage = () => {
    return (
-      <div className="min-h-screen flex items-center justify-center">
-         <Title title={BlogsTitle} />
+      <div className="min-h-screen flex flex-col items-center justify-center">
+         <main className="w-full text-center">
+            <Title title={BlogsTitle} />
+         </main>
+         <span className="text-lg text-slate-300 mt-9">{comingSoon}...</span>
       </div>
    );
 };
