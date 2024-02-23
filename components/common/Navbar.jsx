@@ -14,7 +14,7 @@ const Navbar = () => {
             {navbarItems.map((item, index) => {
                {
                   if (index === 1) {
-                     return <div key={index} className="w-0 h-6 p-0 mx-3 my-auto border-l border-slate-100/60 opacity-60" />;
+                     return <div key={index} className="w-0 h-6 p-0 mx-2 my-auto border-l border-slate-100/60 opacity-60" />;
                   }
 
                   return (

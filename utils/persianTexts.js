@@ -3,7 +3,7 @@ export const metaTitle = "علی شریعتیان |";
 
 // Navbar
 export const navbarItems = [
-   { slug: "/", title: "خانه" },
+   { slug: "/", title: "علی شریعتیان" },
    { slug: "", title: "" },
    { slug: "/blogs", title: "نوشته‌ها" },
    { slug: "/about-me", title: "درباره من" },

@@ -8,7 +8,7 @@ export const metadata = {
 
 const AboutMePage = () => {
    return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex flex-col items-center justify-center">
          <main className="w-full text-center">
             <Title title={aboutMeTitle} />
          </main>
