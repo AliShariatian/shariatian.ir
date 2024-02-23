@@ -19,7 +19,7 @@ const FrozenRouter: FC<PropsWithChildren> = ({ children }): JSX.Element => {
 
 const variants = {
    // hidden
-   initial: { opacity: 0, x: -200, y: 100 },
+   initial: { opacity: 0, x: 0, y: 100 },
    // enter
    animate: {
       opacity: 1,
