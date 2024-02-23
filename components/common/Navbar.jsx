@@ -1,8 +1,6 @@
 import Link from "next/link";
 
-const home = "خانه";
-const aboutMe = "درباره من";
-const blog = "نوشته‌ها";
+import { home, aboutMe, blog } from "@/utils/persianTexts";
 
 const Navbar = () => {
    return (
@@ -13,7 +11,7 @@ const Navbar = () => {
             </li>
             <div className="w-0 !p-0 border-l h-6 border-slate-100/60 mx-3 my-auto" />
             <li>
-               <Link href="/about-me">{blog}</Link>
+               <Link href="/blogs">{blog}</Link>
             </li>
             <li>
                <Link href="/about-me">{aboutMe}</Link>

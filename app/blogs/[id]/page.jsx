@@ -1,27 +1,15 @@
 "use client";
 
-import Link from "next/link";
-import React from "react";
-import { PiArrowLeftThin } from "react-icons/pi";
 import { motion } from "framer-motion";
+
+import Link from "next/link";
 import Image from "next/image";
 
-function SinglePostPage() {
+import { PiArrowLeftThin } from "react-icons/pi";
+
+const SinglePostPage = () => {
    return (
-      <motion.div
-         className="text-neutral-50"
-         initial={{ y: 100, opacity: 0 }}
-         animate={{
-            y: 0,
-            opacity: 1,
-            transition: {
-               duration: 0.8,
-               delay: 0,
-               type: "spring",
-               stiffness: 200,
-            },
-         }}
-      >
+      <div className="text-neutral-50">
          <div className="sticky top-5">
             <div className="-mt-6">
                <div className="bg-neutral-800/75 backdrop-blur-lg h-10 w-full rounded-xl flex items-center gap-x-7 border border-neutral-700">
@@ -125,8 +113,8 @@ function SinglePostPage() {
                </p>
             </article>
          </section>
-      </motion.div>
+      </div>
    );
-}
+};
 
 export default SinglePostPage;

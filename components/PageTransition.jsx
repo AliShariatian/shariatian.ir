@@ -17,8 +17,21 @@ function FrozenRouter({ children }) {
 }
 
 const variants = {
-   hidden: { opacity: 0, x: -200, y: 100 },
-   enter: { opacity: 1, x: 0, y: 0 },
+   // hidden
+   initial: { opacity: 0, x: -200, y: 100 },
+   // enter
+   animate: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: {
+         duration: 0.8,
+         delay: 0,
+         type: "spring",
+         stiffness: 200,
+      },
+   },
+   // exit
    exit: { opacity: 0, x: 0, y: -100 },
 };
 
@@ -28,7 +41,7 @@ const PageTransitionEffect = ({ children }) => {
 
    return (
       <AnimatePresence mode="popLayout">
-         <motion.div key={key} initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }} className="overflow-hidden">
+         <motion.div key={key} initial="initial" animate="animate" exit="exit" variants={variants} transition={{ type: "linear" }} className="overflow-hidden">
             <FrozenRouter>{children}</FrozenRouter>
          </motion.div>
       </AnimatePresence>

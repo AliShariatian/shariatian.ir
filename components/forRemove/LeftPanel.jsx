@@ -4,7 +4,7 @@ import { PiBookOpenTextLight, PiHouseLight } from "react-icons/pi";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import Social from "./Social";
+import Social from "../common/Social";
 // import EmailSubscribe from "./EmailSubscribe/EmailSubscribe";
 
 function LeftPanel() {
