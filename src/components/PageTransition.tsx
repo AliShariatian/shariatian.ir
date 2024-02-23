@@ -1,11 +1,12 @@
 "use client";
 
+import { FC, PropsWithChildren } from "react";
 import { useContext, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { LayoutRouterContext } from "next/dist/shared/lib/app-router-context.shared-runtime";
 
-function FrozenRouter({ children }) {
+const FrozenRouter: FC<PropsWithChildren> = ({ children }): JSX.Element => {
    const context = useContext(LayoutRouterContext ?? {});
    const frozen = useRef(context).current;
 
@@ -14,7 +15,7 @@ function FrozenRouter({ children }) {
    }
 
    return <LayoutRouterContext.Provider value={frozen}>{children}</LayoutRouterContext.Provider>;
-}
+};
 
 const variants = {
    // hidden
@@ -35,7 +36,7 @@ const variants = {
    exit: { opacity: 0, x: 0, y: -100 },
 };
 
-const PageTransitionEffect = ({ children }) => {
+const PageTransitionEffect: FC<PropsWithChildren> = ({ children }): JSX.Element => {
    // The `key` is tied to the url using the `usePathname` hook.
    const key = usePathname();
 

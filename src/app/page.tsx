@@ -1,9 +1,11 @@
 "use client";
 
+import { FC } from "react";
+
 import { motion } from "framer-motion";
 import { aliShariatian, description } from "@/utils/persianTexts";
 
-const HomePage = () => {
+const HomePage: FC = (): JSX.Element => {
    return (
       <div className="min-h-screen flex flex-col items-center justify-center h-full">
          {/* MAIN */}

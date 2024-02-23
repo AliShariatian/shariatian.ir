@@ -1,10 +1,11 @@
 "use client";
 
+import { FC } from "react";
 import { motion } from "framer-motion";
-import Social from "./Social";
 import { social } from "@/utils/persianTexts";
+import Social from "./Social";
 
-const Footer = () => {
+const Footer: FC = (): JSX.Element => {
    return (
       <footer>
          <motion.div

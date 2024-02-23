@@ -1,11 +1,11 @@
 "use client";
 
+import { FC } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 import { navbarItems } from "@/utils/persianTexts";
 
-const Navbar = () => {
+const Navbar: FC = (): JSX.Element => {
    const currentPath = usePathname();
 
    return (

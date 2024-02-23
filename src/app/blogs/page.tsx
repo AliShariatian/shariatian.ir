@@ -1,14 +1,17 @@
+import type { Metadata } from "next";
+import { FC } from "react";
+
 import Title from "@/components/common/Title";
 import { BlogsTitle, metaTitle } from "@/utils/persianTexts";
 
-export const metadata = {
+export const metadata: Metadata = {
    title: `${metaTitle} نوشته‌ها`,
    description: "آموزش برنامه نویسی فرانت اند و طراحی سایت",
 };
 
-const comingSoon = "بزودی";
+const comingSoon: string = "بزودی";
 
-const BlogPage = () => {
+const BlogPage: FC = (): JSX.Element => {
    return (
       <div className="min-h-screen flex flex-col items-center justify-center">
          <main className="w-full text-center">
