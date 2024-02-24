@@ -17,27 +17,27 @@ const Social: FC<Props> = ({ scale = 20 }): JSX.Element => {
    const socials: SocialTypes = [
       {
          name: "Linkedin",
-         src: "/social/linkedin.svg",
+         src: "/img/social/linkedin.svg",
          link: "https://linkedin.com/in/AliShariatian",
       },
       {
          name: "X",
-         src: "/social/x.svg",
+         src: "/img/social/x.svg",
          link: "https://twitter.com/Ali_Shariatian",
       },
       {
          name: "Github",
-         src: "/social/github.svg",
+         src: "/img/social/github.svg",
          link: "https://github.com/AliShariatian",
       },
       {
          name: "CodePen",
-         src: "/social/codepen.svg",
+         src: "/img/social/codepen.svg",
          link: "https://codepen.io/AliShariatian",
       },
       {
          name: "WakaTime",
-         src: "/social/wakatime.svg",
+         src: "/img/social/wakatime.svg",
          link: "https://wakatime.com/@alishariatian",
       },
    ];

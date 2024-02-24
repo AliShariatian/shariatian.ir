@@ -19,18 +19,12 @@ const FrozenRouter: FC<PropsWithChildren> = ({ children }): JSX.Element => {
 
 const variants = {
    // hidden
-   initial: { opacity: 0, x: 0, y: 100 },
+   initial: { opacity: 0, x: 0, y: 0 },
    // enter
    animate: {
       opacity: 1,
       x: 0,
       y: 0,
-      transition: {
-         duration: 0.8,
-         delay: 0,
-         type: "spring",
-         stiffness: 200,
-      },
    },
    // exit
    exit: { opacity: 0, x: 0, y: -100 },
@@ -41,8 +35,8 @@ const PageTransitionEffect: FC<PropsWithChildren> = ({ children }): JSX.Element 
    const key = usePathname();
 
    return (
-      <AnimatePresence mode="popLayout">
-         <motion.div key={key} initial="initial" animate="animate" exit="exit" variants={variants} transition={{ type: "linear" }} className="overflow-hidden">
+      <AnimatePresence mode="wait">
+         <motion.div key={key} initial="initial" animate="animate" exit="exit" variants={variants} transition={{ type: "linear" }} className="mt-32 xl:mt-40">
             <FrozenRouter>{children}</FrozenRouter>
          </motion.div>
       </AnimatePresence>
