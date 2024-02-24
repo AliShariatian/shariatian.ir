@@ -20,7 +20,7 @@ const AboutMePage: FC = (): JSX.Element => {
             <Title title={aboutMePageTexts.aboutMeTitle} />
          </main>
 
-         <p className="px-16 xl:px-5 xl:w-1/2 text-slate-300 leading-8 text-justify">{aboutMePageTexts.aboutMe}</p>
+         <p className="px-9 xl:px-5 xl:w-1/2 text-slate-300 leading-8 text-justify">{aboutMePageTexts.aboutMe}</p>
          {/* Arrow */}
          <Image src="/img/curved-arrow.svg" alt="arrow" width={90} height={90} className="mt-9 invert opacity-70 scale-x-[-1] -rotate-[15deg]" />
          {/* Skills */}
