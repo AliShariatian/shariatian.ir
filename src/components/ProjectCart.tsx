@@ -1,3 +1,4 @@
+import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { aboutMePageTexts } from "@/utils/persianTexts";
@@ -10,7 +11,7 @@ interface Props {
    skills: string[];
 }
 
-function ProjectCard({ src, link, title, description, skills }: Props) {
+const ProjectCard: FC<Props> = ({ src, link, title, description, skills }): JSX.Element => {
    return (
       <div className="relative overflow-hidden rounded-lg border border-slate-900 group/img">
          {/* Image */}
@@ -42,6 +43,6 @@ function ProjectCard({ src, link, title, description, skills }: Props) {
          </div>
       </div>
    );
-}
+};
 
 export default ProjectCard;
