@@ -7,7 +7,7 @@ import { HomePageTexts } from "@/utils/persianTexts";
 
 const HomePage: FC = (): JSX.Element => {
    return (
-      <div className="flex flex-col items-center justify-start">
+      <div className="flex flex-col items-center justify-center mt-20 xl:mt-9">
          {/* MAIN */}
          <main className="w-full text-center">
             <div className="relative text-ellipsis text-center">
@@ -20,7 +20,7 @@ const HomePage: FC = (): JSX.Element => {
                drag
                dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                dragElastic={0.8}
-               className="cursor-default text-base px-5 xl:px-0 xl:text-lg mt-12 font-dana font-light text-slate-300 opacity-[0.7]"
+               className="cursor-default text-base px-5 xl:px-0 xl:text-lg mt-9 xl:mt-12 font-dana font-light text-slate-300 opacity-[0.7]"
             >
                {HomePageTexts.description}
             </motion.h1>

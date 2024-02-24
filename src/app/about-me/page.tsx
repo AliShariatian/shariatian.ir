@@ -22,11 +22,11 @@ const AboutMePage: FC = (): JSX.Element => {
          {/* Arrow */}
          <Image src="/img/curved-arrow.svg" alt="arrow" width={90} height={90} className="mt-9 invert opacity-70 scale-x-[-1] -rotate-[15deg]" />
 
-         <section id="projects" className="px-20 mt-20 flex flex-col items-center justify-center">
+         <section id="projects" className="mt-20 flex flex-col items-center justify-center">
             <h4 className="font-extrabold text-4xl my-36">{aboutMePageTexts.projects.projectsTitle}</h4>
 
             {/* Projects card */}
-            <div className="grid grid-cols-1 xl:grid-cols-3 gap-10 px-10">
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-10 px-5 xl:px-16">
                <ProjectCard
                   link="galaxy.shariatian.ir"
                   src="/img/projects/galaxy.webp"
