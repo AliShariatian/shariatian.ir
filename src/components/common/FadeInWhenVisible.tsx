@@ -3,12 +3,16 @@
 import { FC, PropsWithChildren } from "react";
 import { motion } from "framer-motion";
 
-const FadeInWhenVisible: FC<PropsWithChildren> = ({ children }) => {
+type Props = {
+   margin?: number;
+};
+
+const FadeInWhenVisible: FC<PropsWithChildren<Props>> = ({ children, margin = 0 }) => {
    return (
       <motion.div
          initial="hidden"
          whileInView="visible"
-         viewport={{ once: true }}
+         viewport={{ once: false, margin: `${margin}px` }}
          transition={{ duration: 0.5 }}
          variants={{
             visible: { opacity: 1, scale: 1 },

@@ -35,7 +35,7 @@ const AboutMePage: FC = (): JSX.Element => {
                <h4 className="font-extrabold text-4xl mt-48 mb-28">{aboutMePageTexts.projects.projectsTitle}</h4>
             </FadeInWhenVisible>
 
-            <FadeInWhenVisible>
+            <FadeInWhenVisible margin={150}>
                {/* Projects card */}
                <div className="grid grid-cols-1 xl:grid-cols-3 gap-10 px-5 xl:px-20">
                   <ProjectCard
