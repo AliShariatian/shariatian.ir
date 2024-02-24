@@ -4,22 +4,22 @@ export type SocialType = {
    link: string;
 };
 
-type SocialsType = SocialType[];
+export type SocialsType = SocialType[];
 
 export const topNavBarSocials: SocialsType = [
    {
       name: "Linkedin",
-      src: "/img/linkedin.svg",
+      src: "/img/social/linkedin.svg",
       link: "https://linkedin.com/in/AliShariatian",
    },
    {
       name: "X",
-      src: "/img/x.svg",
+      src: "/img/social/x.svg",
       link: "https://twitter.com/Ali_Shariatian",
    },
    {
       name: "Github",
-      src: "/img/github.svg",
+      src: "/img/social/github.svg",
       link: "https://github.com/AliShariatian",
    },
 ];

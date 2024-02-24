@@ -4,12 +4,14 @@ import { FC } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navbarItems } from "@/utils/persianTexts";
+import Social from "./Social";
+import { topNavBarSocials } from "@/utils/social";
 
 const Navbar: FC = (): JSX.Element => {
    const currentPath = usePathname();
 
    return (
-      <nav className="fixed shadow top-0 right-0 w-full bg-slate-950/10 backdrop-blur-lg flex items-center h-16 xl:h-24 xl:px-28 z-50">
+      <nav className="fixed shadow top-0 right-0 w-full bg-slate-950/10 backdrop-blur-lg flex items-center justify-between h-16 xl:h-24 xl:px-28 z-50">
          <ul className="flex justify-center gap-2 xl:gap-4 xl:mr-20 mx-auto xl:mx-0">
             {navbarItems.map((item, index: number) => {
                {
@@ -25,6 +27,11 @@ const Navbar: FC = (): JSX.Element => {
                }
             })}
          </ul>
+         
+         {/* Social links */}
+         <div className="hidden xl:flex flex-row-reverse gap-5 items-baseline opacity-95">
+            <Social data={topNavBarSocials} scale={24} />
+         </div>
       </nav>
    );
 };
