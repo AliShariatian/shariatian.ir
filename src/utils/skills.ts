@@ -5,9 +5,7 @@ export type Frontend_skillType = {
    height: number;
 };
 
-type Frontend_skillsType = Frontend_skillType[];
-
-export const Frontend_skills: Frontend_skillsType = [
+export const Frontend_skills: Frontend_skillType[] = [
    {
       skill_name: "HTML",
       image: "/img/skills/html.svg",

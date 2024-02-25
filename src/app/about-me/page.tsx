@@ -6,6 +6,7 @@ import { aboutMePageTexts, metaTitle } from "@/utils/persianTexts";
 import ProjectCard from "@/components/ProjectCart";
 import Image from "next/image";
 import Skills from "@/components/Skills";
+import { projects, ProjectType } from "@/utils/projects";
 
 export const metadata: Metadata = {
    title: `${metaTitle} درباره من`,
@@ -31,21 +32,10 @@ const AboutMePage: FC = (): JSX.Element => {
             <h4 className="font-extrabold text-4xl my-28">{aboutMePageTexts.projects.projectsTitle}</h4>
 
             {/* Projects card */}
-            <div className="grid grid-cols-1 xl:grid-cols-3 gap-10 px-5 xl:px-20">
-               <ProjectCard
-                  link="https://galaxy.shariatian.ir"
-                  src="/img/projects/galaxy.webp"
-                  title="لندینگ پیج گلکسی"
-                  description="پروژه تک‌صفحه‌ای لندینگ پیج برای نمایش نمونه‌کارها"
-                  skills={["React JS", "Next JS", "Tailwind CSS", "Framer Motion"]}
-               />
-               <ProjectCard
-                  link="https://medium.shariatian.ir"
-                  src="/img/projects/medium.webp"
-                  title="کلون سایت Medium"
-                  description="پروژه مشابه‌سازی سایت وبلاگ‌نویسی Medium"
-                  skills={["React JS", "Context API", "Axios", "EditorJS", "Lodash", "Tailwind CSS", "Framer Motion"]}
-               />
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-14 xl:gap-10 px-5 xl:px-20">
+               {projects.map((item: ProjectType) => (
+                  <ProjectCard key={item.link} link={item.link} src={item.src} title={item.title} description={item.description} skills={item.skills} imgBgColor={item.imgBgColor} />
+               ))}
             </div>
          </section>
       </div>

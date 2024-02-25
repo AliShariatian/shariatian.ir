@@ -1,10 +1,10 @@
 import { FC } from "react";
-import { SocialType, SocialsType } from "@/utils/social";
+import { SocialType } from "@/utils/social";
 import Image from "next/image";
 
 type Props = {
    scale?: number;
-   data: SocialsType;
+   data: SocialType[];
 };
 const Social: FC<Props> = ({ scale = 20, data }): JSX.Element => {
    return (

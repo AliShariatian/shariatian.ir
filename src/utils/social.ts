@@ -4,9 +4,7 @@ export type SocialType = {
    link: string;
 };
 
-export type SocialsType = SocialType[];
-
-export const topNavBarSocials: SocialsType = [
+export const topNavBarSocials: SocialType[] = [
    {
       name: "Linkedin",
       src: "/img/social/linkedin.svg",
@@ -24,7 +22,7 @@ export const topNavBarSocials: SocialsType = [
    },
 ];
 
-export const footerSocials: SocialsType = [
+export const footerSocials: SocialType[] = [
    {
       name: "Linkedin",
       src: "/img/social/linkedin.svg",
