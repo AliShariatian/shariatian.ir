@@ -26,13 +26,13 @@ const ProjectCard: FC<Props> = ({ src, link, title, description, skills, imgBgCo
          </Link>
 
          {/* Content */}
-         <div className="relative p-5 flex flex-col gap-3">
+         <div className="relative p-5 flex flex-col gap-3 mt-2">
             <Link href={link} target="_blank" title="رفتن به پروژه" className="w-fit">
                <h2 className="text-2xl font-bold text-slate-100">{title}</h2>
             </Link>
             <p className="text-slate-300">{description}</p>
 
-            <hr className="my-3 border-slate-900" />
+            <hr className="my-2 border-slate-900" />
 
             <span className="text-slate-300 -mb-3">{aboutMePageTexts.projects.skillUsed}:</span>
             {/* Tools */}
