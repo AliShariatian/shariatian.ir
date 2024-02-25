@@ -58,3 +58,6 @@ export const footerTexts: {
 } = {
    social: "شـبـکـه‌هـای اجـتـمـاعـی",
 };
+
+// 404 NotFound Page
+export const warning404Text: string = "اشتباه اومدی! بهتره برگردیم خونه";
