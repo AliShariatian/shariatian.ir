@@ -3,12 +3,12 @@ import { FC, PropsWithChildren } from "react";
 
 import localFont from "next/font/local";
 import { JetBrains_Mono } from "next/font/google";
-import PageTransition from "@/components/PageTransition";
+import PageTransition from "@/components/effects/PageTransition";
 import "./globals.css";
 
 // COMPONENTS IMPORT
-import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { metaTitle } from "@/utils/persianTexts";
 
 // Heading font
