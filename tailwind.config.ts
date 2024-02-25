@@ -7,6 +7,7 @@ const config: Config = {
          fontFamily: {
             dana: ["var(--font-dana)"],
             morabba: ["var(--font-morabba)"],
+            jetBrains: ["var(--font-jetBrains)"],
          },
       },
    },

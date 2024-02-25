@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { FC, PropsWithChildren } from "react";
 
 import localFont from "next/font/local";
+import { JetBrains_Mono } from "next/font/google";
 import PageTransition from "@/components/PageTransition";
 import "./globals.css";
 
@@ -12,6 +13,8 @@ import { metaTitle } from "@/utils/persianTexts";
 
 // Heading font
 const morabbaFont = localFont({ src: "../../public/font/Morabba-Medium.ttf", variable: "--font-morabba" });
+// Code
+const jetBrainsFont = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetBrains" });
 
 // Body font
 
@@ -54,7 +57,9 @@ export const metadata: Metadata = {
 const RootLayout: FC<PropsWithChildren> = ({ children }): JSX.Element => {
    return (
       <html lang="fa" dir="rtl" className="h-full">
-         <body className={`${danaFont.className} ${morabbaFont.variable} h-full overflow-x-hidden flex flex-col justify-between bg-slate-950 text-slate-100 transition-all ease-in duration-200`}>
+         <body
+            className={`${danaFont.variable} ${morabbaFont.variable} ${jetBrainsFont.variable} font-dana h-full overflow-x-hidden flex flex-col justify-between bg-slate-950 text-slate-100 transition-all ease-in duration-200`}
+         >
             <Navbar />
             <PageTransition>{children}</PageTransition>
             <Footer />

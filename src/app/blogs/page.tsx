@@ -17,7 +17,24 @@ const BlogPage: FC = (): JSX.Element => {
          <main className="w-full text-center">
             <Title title={blogPageTexts.BlogsTitle} />
          </main>
-         <span className="text-lg text-slate-300 mt-9">{comingSoon}...</span>
+
+         {/*  */}
+         <div dir="ltr" className="font-jetBrains mt-24 flex -z-40">
+            <span>
+               Console
+               <span className="text-white">
+                  .<span className="text-[#e06c75]">log</span>
+               </span>
+               {`("`}
+            </span>
+            <div className="string">
+               <span className="greeting fa !font-dana">بزودی!</span>
+               <span className="greeting en">Coming Soon!</span>
+               <span className="greeting es">¡Hola Mundo!</span>
+               <span className="greeting de">Hallo Welt!</span>
+            </div>
+            <span className="closure">{`");`}</span>
+         </div>
       </div>
    );
 };
