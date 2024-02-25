@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { navbarItems } from "@/utils/persianTexts";
 import Social from "./Social";
 import { topNavBarSocials } from "@/utils/social";
-import NavbarHideOnScroll from "../NavbarHideOnScroll";
+import NavbarHideOnScroll from "../effects/NavbarHideOnScroll";
 
 const Navbar: FC = (): JSX.Element => {
    const currentPath = usePathname();
