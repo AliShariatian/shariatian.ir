@@ -20,7 +20,7 @@ export const projects: ProjectType[] = [
    {
       liveLink: "https://galaxy.shariatian.ir",
       src: "/img/projects/galaxy.webp",
-      githubLink: "",
+      githubLink: "https://github.com/AliShariatian/galaxy-landing-page",
       title: "لندینگ پیج گلکسی",
       description: "پروژه تک‌صفحه‌ای برای نمایش نمونه‌کارها",
       skills: ["ReactJS", "NextJS", "Typescript", "Tailwind CSS", "Framer Motion"],

@@ -13,7 +13,7 @@ const Navbar: FC = (): JSX.Element => {
 
    return (
       <NavbarHideOnScroll>
-         <nav className="fixed shadow top-0 right-0 w-full bg-slate-950/10 backdrop-blur-lg flex items-center justify-between h-16 xl:h-24 xl:px-28 z-50">
+         <nav className="fixed shadow top-0 right-0 w-full bg-slate-950/10 backdrop-blur-lg flex items-center justify-between h-16 xl:h-24 xl:px-28 z-40">
             <ul className="flex justify-center gap-2 xl:gap-4 xl:mr-20 mx-auto xl:mx-0">
                {navbarItems.map((item: navbarItemsType, index: number) => {
                   {
