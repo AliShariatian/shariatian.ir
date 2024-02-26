@@ -1,23 +1,23 @@
+// TYPES
 import type { Metadata } from "next";
 import { FC, PropsWithChildren } from "react";
-
+// FONT AND STYLE
 import localFont from "next/font/local";
 import { JetBrains_Mono } from "next/font/google";
-import PageTransition from "@/components/effects/PageTransition";
 import "./globals.css";
-
-// COMPONENTS IMPORT
+// COMPONENTS
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PageTransition from "@/components/effects/PageTransition";
+import PageLoadingProgressBar from "@/components/PageLoadingProgressBar";
+// TEXTS
 import { metaTitle } from "@/utils/persianTexts";
 
 // Heading font
 const morabbaFont = localFont({ src: "../../public/font/Morabba-Medium.ttf", variable: "--font-morabba" });
-// Code
+// Code font
 const jetBrainsFont = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetBrains" });
-
 // Body font
-
 const danaFont = localFont({
    src: [
       {
@@ -58,11 +58,15 @@ const RootLayout: FC<PropsWithChildren> = ({ children }): JSX.Element => {
    return (
       <html lang="fa" dir="rtl" className="h-full">
          <body
-            className={`${danaFont.variable} ${morabbaFont.variable} ${jetBrainsFont.variable} bgDotPattern font-dana h-full overflow-x-hidden flex flex-col justify-between bg-slate-950 text-slate-100 transition-all ease-in duration-200`}
+            className={`${danaFont.variable} ${morabbaFont.variable} ${jetBrainsFont.variable} relative bgDotPattern font-dana h-full overflow-x-hidden bg-slate-950 text-slate-100 transition-all ease-in duration-200`}
          >
-            <Navbar />
-            <PageTransition>{children}</PageTransition>
-            <Footer />
+            <PageLoadingProgressBar />
+
+            <div className="h-full flex flex-col justify-between">
+               <Navbar />
+               <PageTransition>{children}</PageTransition>
+               <Footer />
+            </div>
          </body>
       </html>
    );
