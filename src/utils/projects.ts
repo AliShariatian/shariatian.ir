@@ -13,7 +13,7 @@ export const projects: ProjectType[] = [
       src: "/img/projects/galaxy.webp",
       title: "لندینگ پیج گلکسی",
       description: "پروژه تک‌صفحه‌ای لندینگ پیج برای نمایش نمونه‌کارها",
-      skills: ["React JS", "Next JS", "Tailwind CSS", "Framer Motion"],
+      skills: ["ReactJS", "NextJS", "Typescript", "Tailwind CSS", "Framer Motion"],
       imgBgColor: "bg-indigo-300",
    },
    {
@@ -22,5 +22,21 @@ export const projects: ProjectType[] = [
       title: "کلون سایت Medium",
       description: "پروژه مشابه‌سازی سایت وبلاگ‌نویسی Medium",
       skills: ["React JS", "Context API", "Axios", "EditorJS", "Lodash", "Tailwind CSS", "Framer Motion"],
+   },
+   {
+      link: "https://alishariatian.github.io/social-media-clone",
+      src: "/img/projects/social.webp",
+      title: "وبسایت شبکه اجتماعی",
+      description: "طراحی صفحه ابتدایی یک وبسایت شبکه اجتماعی",
+      skills: ["HTML", "CSS", "Javascript"],
+      imgBgColor: "bg-amber-200",
+   },
+   {
+      link: "/",
+      src: "/img/projects/shariatian.webp",
+      title: "همین وبسایت",
+      description: "وبسایت شخصی برای ارائه نمونه‌کارها و انتشار تجربه",
+      skills: ["ReactJS", "NextJS", "Typescript", "Tailwind CSS", "Framer Motion", "Material UI"],
+      imgBgColor: "bg-slate-300",
    },
 ];
