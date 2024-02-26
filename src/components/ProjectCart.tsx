@@ -14,7 +14,7 @@ interface Props {
 
 const ProjectCard: FC<Props> = ({ src, link, title, description, skills, imgBgColor = "bg-blue-200" }): JSX.Element => {
    return (
-      <div className="relative overflow-hidden rounded-2xl border border-slate-900 group/img shadow-md">
+      <div className="relative overflow-hidden rounded-2xl bg-slate-950 border border-slate-900 group/img shadow-md">
          {/* Image */}
          <Link href={link} target="_blank" className="relative">
             <div className={`${imgBgColor} p-9 rounded-2xl overflow-hidden`}>
