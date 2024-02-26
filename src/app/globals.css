@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
 /* Background dot pattern */
 
 .bgDotPattern {
-   background-image: radial-gradient(rgba(184, 184, 184, 0.25) 1px, transparent 1px);
+   background-image: radial-gradient(rgba(184, 184, 184, 0.2) 1px, transparent 1px);
    background-size: 45px 45px;
    position: relative;
 }
@@ -41,7 +41,7 @@ body::-webkit-scrollbar-thumb {
    left: 50%;
    transform: translate(-50%, -50%);
    width: 70%;
-   height: 70%;
+   height: 80%;
    border-radius: 30%;
    background: var(--slate950);
    filter: blur(90px);

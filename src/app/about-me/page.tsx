@@ -34,7 +34,7 @@ const AboutMePage: FC = (): JSX.Element => {
             {/* Projects card */}
             <div className="grid grid-cols-1 xl:grid-cols-3 gap-14 xl:gap-10 px-5 xl:px-20">
                {projects.map((item: ProjectType) => (
-                  <ProjectCard key={item.link} link={item.link} src={item.src} title={item.title} description={item.description} skills={item.skills} imgBgColor={item.imgBgColor} />
+                  <ProjectCard key={item.liveLink} liveLink={item.liveLink} githubLink={item.githubLink} src={item.src} title={item.title} description={item.description} skills={item.skills} imgBgColor={item.imgBgColor} />
                ))}
             </div>
          </section>

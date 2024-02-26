@@ -1,5 +1,6 @@
 export type ProjectType = {
-   link: string;
+   liveLink: string;
+   githubLink: string;
    src: string;
    title: string;
    description: string;
@@ -9,31 +10,35 @@ export type ProjectType = {
 
 export const projects: ProjectType[] = [
    {
-      link: "https://medium.shariatian.ir",
+      liveLink: "https://medium.shariatian.ir",
       src: "/img/projects/medium.webp",
+      githubLink: "https://github.com/AliShariatian/medium-clone",
       title: "کلون سایت Medium",
       description: "پروژه مشابه‌سازی سایت وبلاگ‌نویسی Medium",
       skills: ["React JS", "Context API", "Axios", "EditorJS", "Lodash", "Tailwind CSS", "Framer Motion"],
    },
    {
-      link: "https://galaxy.shariatian.ir",
+      liveLink: "https://galaxy.shariatian.ir",
       src: "/img/projects/galaxy.webp",
+      githubLink: "",
       title: "لندینگ پیج گلکسی",
       description: "پروژه تک‌صفحه‌ای برای نمایش نمونه‌کارها",
       skills: ["ReactJS", "NextJS", "Typescript", "Tailwind CSS", "Framer Motion"],
       imgBgColor: "bg-indigo-300",
    },
    {
-      link: "https://alishariatian.github.io/social-media-clone",
+      liveLink: "https://alishariatian.github.io/social-media-clone",
       src: "/img/projects/social.webp",
-      title: "وبسایت شبکه اجتماعی",
-      description: "طراحی صفحه ابتدایی یک وبسایت شبکه اجتماعی",
+      githubLink: "https://github.com/AliShariatian/social-media-clone",
+      title: "قالب شبکه‌اجتماعی",
+      description: "طراحی قالب صفحه ابتدایی یک وبسایت شبکه اجتماعی",
       skills: ["HTML", "CSS", "Javascript"],
       imgBgColor: "bg-amber-200",
    },
    {
-      link: "/",
+      liveLink: "/",
       src: "/img/projects/shariatian.webp",
+      githubLink: "https://github.com/AliShariatian/shariatian.ir",
       title: "همین وبسایت",
       description: "وبسایت شخصی برای ارائه نمونه‌کارها و انتشار تجربه",
       skills: ["ReactJS", "NextJS", "Typescript", "Tailwind CSS", "Framer Motion", "Material UI"],
