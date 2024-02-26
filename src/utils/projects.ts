@@ -9,19 +9,19 @@ export type ProjectType = {
 
 export const projects: ProjectType[] = [
    {
-      link: "https://galaxy.shariatian.ir",
-      src: "/img/projects/galaxy.webp",
-      title: "لندینگ پیج گلکسی",
-      description: "پروژه تک‌صفحه‌ای لندینگ پیج برای نمایش نمونه‌کارها",
-      skills: ["ReactJS", "NextJS", "Typescript", "Tailwind CSS", "Framer Motion"],
-      imgBgColor: "bg-indigo-300",
-   },
-   {
       link: "https://medium.shariatian.ir",
       src: "/img/projects/medium.webp",
       title: "کلون سایت Medium",
       description: "پروژه مشابه‌سازی سایت وبلاگ‌نویسی Medium",
       skills: ["React JS", "Context API", "Axios", "EditorJS", "Lodash", "Tailwind CSS", "Framer Motion"],
+   },
+   {
+      link: "https://galaxy.shariatian.ir",
+      src: "/img/projects/galaxy.webp",
+      title: "لندینگ پیج گلکسی",
+      description: "پروژه تک‌صفحه‌ای برای نمایش نمونه‌کارها",
+      skills: ["ReactJS", "NextJS", "Typescript", "Tailwind CSS", "Framer Motion"],
+      imgBgColor: "bg-indigo-300",
    },
    {
       link: "https://alishariatian.github.io/social-media-clone",

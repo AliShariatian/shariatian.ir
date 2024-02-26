@@ -2,13 +2,12 @@
 export const metaTitle: string = "علی شریعتیان |";
 
 // Navbar
-type navbarItems = {
+export type navbarItemsType = {
    slug: string;
    title: string;
 };
-type navbarItemsType = navbarItems[];
 
-export const navbarItems: navbarItemsType = [
+export const navbarItems: navbarItemsType[] = [
    { slug: "/", title: "علی شریعتیان" },
    { slug: "", title: "" },
    { slug: "/blogs", title: "نوشته‌ها" },
@@ -60,4 +59,4 @@ export const footerTexts: {
 };
 
 // 404 NotFound Page
-export const warning404Text: string = "اشتباه اومدی! بهتره برگردیم خونه";
+export const warning404Text: string = "اشتباه اومدی عزیرم! بهتره برگردیم خونه";

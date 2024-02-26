@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { FC } from "react";
 
-import Title from "@/components/common/Title";
+import Title from "@/components/sub/Title";
 import { aboutMePageTexts, metaTitle } from "@/utils/persianTexts";
-import ProjectCard from "@/components/ProjectCart";
+import ProjectCard from "@/components/sub/ProjectCart";
 import Image from "next/image";
-import Skills from "@/components/Skills";
+import Skills from "@/components/sub/Skills";
 import { projects, ProjectType } from "@/utils/projects";
 
 export const metadata: Metadata = {

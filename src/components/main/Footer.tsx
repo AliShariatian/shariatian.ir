@@ -3,7 +3,7 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
 import { footerTexts } from "@/utils/persianTexts";
-import Social from "./Social";
+import Social from "../sub/Social";
 import { footerSocials } from "@/utils/social";
 
 const Footer: FC = (): JSX.Element => {

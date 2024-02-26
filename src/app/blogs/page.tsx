@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { FC } from "react";
 
-import Title from "@/components/common/Title";
+import Title from "@/components/sub/Title";
 import { blogPageTexts, metaTitle } from "@/utils/persianTexts";
 
 export const metadata: Metadata = {
