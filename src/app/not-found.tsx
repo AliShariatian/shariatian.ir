@@ -1,6 +1,6 @@
 import { FC } from "react";
-import Link from "next/link";
 import { warning404Text } from "@/utils/persianTexts";
+import A from "@/components/sub/A/A";
 
 const NotFound404Page: FC = (): JSX.Element => {
    return (
@@ -8,9 +8,9 @@ const NotFound404Page: FC = (): JSX.Element => {
          <span className="font-dana font-bold text-9xl animate-pulse text-red-600 drop-shadow-[0_0_55px_rgba(255,0,0,0.7)]">404</span>
          <div className="flex flex-col gap-7 items-center">
             <p className="text-lg">{warning404Text}</p>
-            <Link href="/" className="py-2 px-9 rounded-xl bg-green-500 transition-[outline-offset] outline -outline-offset-4 hover:outline-offset-4 outline-green-500">
+            <A href="/" className="py-2 px-9 rounded-xl bg-green-500 transition-[outline-offset] outline -outline-offset-4 hover:outline-offset-4 outline-green-500">
                بـریـم
-            </Link>
+            </A>
          </div>
       </main>
    );
