@@ -3,9 +3,9 @@
 import { FC, PropsWithChildren, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-type Props = { RotationRange?: number; className?: string };
+type Props = { RotationRange?: number };
 
-const TiltEffect: FC<PropsWithChildren<Props>> = ({ children, RotationRange = 20, className }): JSX.Element => {
+const TiltEffect: FC<PropsWithChildren<Props>> = ({ children, RotationRange = 20 }): JSX.Element => {
    const HALF_ROTATION_RANGE = RotationRange / 2;
 
    const ref = useRef<HTMLDivElement | null>(null);
@@ -51,7 +51,6 @@ const TiltEffect: FC<PropsWithChildren<Props>> = ({ children, RotationRange = 20
          }}
       >
          <div
-            className={className}
             style={{
                transform: "translateZ(75px)",
                transformStyle: "preserve-3d",

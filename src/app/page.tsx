@@ -4,7 +4,7 @@ import { FC } from "react";
 
 import { motion } from "framer-motion";
 import { HomePageTexts } from "@/utils/persianTexts";
-import TiltEffect from "@/components/effects/TiltCard";
+import TiltEffect from "@/components/effects/TiltEffect";
 
 const HomePage: FC = (): JSX.Element => {
    return (
