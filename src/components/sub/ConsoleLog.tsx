@@ -8,7 +8,7 @@ const ConsoleLog: FC = (): JSX.Element => {
    console.log("Coming Soon!");
 
    return (
-      <div dir="ltr" className="font-jetBrains mt-20 flex">
+      <div dir="ltr" className="mt-20 flex font-jetBrains">
          <span>
             <span className="!text-[#51bbfe]">console</span>
             <span className="text-white">

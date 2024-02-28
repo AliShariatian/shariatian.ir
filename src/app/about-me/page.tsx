@@ -16,25 +16,34 @@ export const metadata: Metadata = {
 const AboutMePage: FC = (): JSX.Element => {
    return (
       <div className="flex flex-col items-center justify-start pb-40">
-         <main className="w-full text-center mb-28">
+         <main className="mb-28 w-full text-center">
             <Title title={aboutMePageTexts.aboutMeTitle} />
          </main>
 
-         <p className="px-9 xl:px-5 xl:w-1/2 text-slate-300 leading-8 text-justify">{aboutMePageTexts.aboutMe}</p>
+         <p className="px-9 text-justify leading-8 text-slate-300 xl:w-1/2 xl:px-5">{aboutMePageTexts.aboutMe}</p>
          {/* Arrow */}
-         <Image src="/img/curved-arrow.svg" alt="arrow" width={90} height={90} className="mt-9 invert opacity-70 scale-x-[-1] -rotate-[15deg]" />
+         <Image src="/img/curved-arrow.svg" alt="arrow" width={90} height={90} className="mt-9 -rotate-[15deg] scale-x-[-1] opacity-70 invert" />
          {/* Skills */}
          <section className="my-28">
             <Skills />
          </section>
 
          <section className="flex flex-col items-center justify-center">
-            <h4 className="font-extrabold text-4xl my-28">{aboutMePageTexts.projects.projectsTitle}</h4>
+            <h4 className="my-28 text-4xl font-extrabold">{aboutMePageTexts.projects.projectsTitle}</h4>
 
             {/* Projects card */}
-            <div className="grid grid-cols-1 xl:grid-cols-3 gap-14 xl:gap-10 px-5 xl:px-20">
+            <div className="grid grid-cols-1 gap-14 px-5 xl:grid-cols-3 xl:gap-10 xl:px-20">
                {projects.map((item: ProjectType) => (
-                  <ProjectCard key={item.liveLink} liveLink={item.liveLink} githubLink={item.githubLink} src={item.src} title={item.title} description={item.description} skills={item.skills} imgBgColor={item.imgBgColor} />
+                  <ProjectCard
+                     key={item.liveLink}
+                     liveLink={item.liveLink}
+                     githubLink={item.githubLink}
+                     src={item.src}
+                     title={item.title}
+                     description={item.description}
+                     skills={item.skills}
+                     imgBgColor={item.imgBgColor}
+                  />
                ))}
             </div>
          </section>

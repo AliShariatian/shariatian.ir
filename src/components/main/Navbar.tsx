@@ -13,16 +13,20 @@ const Navbar: FC = (): JSX.Element => {
 
    return (
       <NavbarHideOnScroll>
-         <nav className="fixed shadow top-0 right-0 w-full bg-slate-950/10 backdrop-blur-lg flex items-center justify-between h-16 xl:h-24 xl:px-28 z-40">
-            <ul className="flex justify-center gap-2 xl:gap-4 xl:mr-20 mx-auto xl:mx-0">
+         <nav className="fixed right-0 top-0 z-40 flex h-16 w-full items-center justify-between bg-slate-950/10 shadow backdrop-blur-lg xl:h-24 xl:px-28">
+            <ul className="mx-auto flex justify-center gap-2 xl:mx-0 xl:mr-20 xl:gap-4">
                {navbarItems.map((item: navbarItemsType, index: number) => {
                   {
                      if (index === 1) {
-                        return <div key={index} className="w-0 h-6 p-0 mx-2 my-auto border-l border-slate-100/60 opacity-60" />;
+                        return <div key={index} className="mx-2 my-auto h-6 w-0 border-l border-slate-100/60 p-0 opacity-60" />;
                      }
 
                      return (
-                        <A href={item.slug} key={index} className={`${currentPath === item.slug ? "!opacity-100" : ""} p-2 opacity-60 hover:opacity-100 transition-opacity`}>
+                        <A
+                           href={item.slug}
+                           key={index}
+                           className={`${currentPath === item.slug ? "!opacity-100" : ""} p-2 opacity-60 transition-opacity hover:opacity-100`}
+                        >
                            <li>{item.title}</li>
                         </A>
                      );
@@ -31,7 +35,7 @@ const Navbar: FC = (): JSX.Element => {
             </ul>
 
             {/* Social links */}
-            <div className="hidden xl:flex flex-row-reverse gap-5 items-baseline opacity-95">
+            <div className="hidden flex-row-reverse items-baseline gap-5 opacity-95 xl:flex">
                <Social data={topNavBarSocials} scale={24} />
             </div>
          </nav>
