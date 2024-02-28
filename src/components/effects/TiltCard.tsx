@@ -3,10 +3,11 @@
 import { FC, PropsWithChildren, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const ROTATION_RANGE = 20;
-const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
+type Props = { RotationRange?: number; className?: string };
 
-const TiltCard: FC<PropsWithChildren> = ({ children }): JSX.Element => {
+const TiltEffect: FC<PropsWithChildren<Props>> = ({ children, RotationRange = 20, className }): JSX.Element => {
+   const HALF_ROTATION_RANGE = RotationRange / 2;
+
    const ref = useRef<HTMLDivElement | null>(null);
 
    const [rotateX, setRotateX] = useState<number>(0);
@@ -20,8 +21,8 @@ const TiltCard: FC<PropsWithChildren> = ({ children }): JSX.Element => {
       const width = rect.width;
       const height = rect.height;
 
-      const mouseX = (ev.clientX - rect.left) * ROTATION_RANGE;
-      const mouseY = (ev.clientY - rect.top) * ROTATION_RANGE;
+      const mouseX = (ev.clientX - rect.left) * RotationRange;
+      const mouseY = (ev.clientY - rect.top) * RotationRange;
 
       const rY = mouseX / width - HALF_ROTATION_RANGE;
       const rX = (mouseY / height - HALF_ROTATION_RANGE) * -1;
@@ -50,6 +51,7 @@ const TiltCard: FC<PropsWithChildren> = ({ children }): JSX.Element => {
          }}
       >
          <div
+            className={className}
             style={{
                transform: "translateZ(75px)",
                transformStyle: "preserve-3d",
@@ -61,4 +63,4 @@ const TiltCard: FC<PropsWithChildren> = ({ children }): JSX.Element => {
    );
 };
 
-export default TiltCard;
+export default TiltEffect;

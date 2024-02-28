@@ -4,7 +4,7 @@ import { FC } from "react";
 
 import { motion } from "framer-motion";
 import { HomePageTexts } from "@/utils/persianTexts";
-import TiltCard from "@/components/effects/TiltCard";
+import TiltEffect from "@/components/effects/TiltCard";
 
 const HomePage: FC = (): JSX.Element => {
    return (
@@ -14,7 +14,7 @@ const HomePage: FC = (): JSX.Element => {
             <div className="relative text-ellipsis text-center">
                <span className="absolute right-0 -top-3 xl:-top-9 -z-10 w-full text-slate-900 opacity-80 select-none font-morabba text-4xl xl:text-9xl font-bold">{HomePageTexts.aliShariatian}</span>
                <motion.h2 drag dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }} dragElastic={0.8} className="font-morabba text-3xl xl:text-8xl font-extrabold cursor-default w-fit mx-auto">
-                  <TiltCard>{HomePageTexts.aliShariatian}</TiltCard>
+                  <TiltEffect>{HomePageTexts.aliShariatian}</TiltEffect>
                </motion.h2>
             </div>
             <motion.h1

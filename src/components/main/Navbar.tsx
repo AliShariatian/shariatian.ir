@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import Link from "next/link";
+import A from "../sub/A/A";
 import { usePathname } from "next/navigation";
 import { navbarItems, navbarItemsType } from "@/utils/persianTexts";
 import Social from "../sub/Social";
@@ -22,9 +22,9 @@ const Navbar: FC = (): JSX.Element => {
                      }
 
                      return (
-                        <Link href={item.slug} key={index} className={`${currentPath === item.slug ? "!opacity-100" : ""} p-2 opacity-60 hover:opacity-100 transition-opacity`}>
+                        <A RotationRange={10} href={item.slug} key={index} haveAnimation className={`${currentPath === item.slug ? "!opacity-100" : ""} p-2 opacity-60 hover:opacity-100 transition-opacity`}>
                            <li>{item.title}</li>
-                        </Link>
+                        </A>
                      );
                   }
                })}
