@@ -23,13 +23,18 @@ const AboutMePage: FC = (): JSX.Element => {
          <p className="px-9 text-justify leading-8 text-slate-300 xl:w-1/2 xl:px-5">{aboutMePageTexts.aboutMe}</p>
          {/* Arrow */}
          <Image src="/img/curved-arrow.svg" alt="arrow" width={90} height={90} className="mt-9 -rotate-[15deg] scale-x-[-1] opacity-70 invert" />
+
          {/* Skills */}
-         <section className="my-28">
+         <section className="relative my-28">
+            <div className="gradient absolute left-1/2 top-28 h-16 w-4/5 -translate-x-1/2 opacity-30" />
             <Skills />
          </section>
 
-         <section className="flex flex-col items-center justify-center">
+         <section className="relative flex flex-col items-center justify-center">
             <h4 className="my-28 text-4xl font-extrabold">{aboutMePageTexts.projects.projectsTitle}</h4>
+            {/* Background blur effect */}
+            <div className="gradient absolute right-32 top-72 size-64 opacity-30" />
+            <div className="gradient absolute left-32 top-72 size-64 opacity-30" />
 
             {/* Projects card */}
             <div className="grid grid-cols-1 gap-14 px-5 xl:grid-cols-3 xl:gap-10 xl:px-20">
