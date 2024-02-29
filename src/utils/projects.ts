@@ -10,6 +10,15 @@ export type ProjectType = {
 
 export const projects: ProjectType[] = [
    {
+      liveLink: "https://travel.shariatian.ir",
+      src: "/img/projects/travel.webp",
+      githubLink: "https://github.com/AliShariatian/Travel-LandingPage",
+      title: "لندینگ‌پیج مسافرتی",
+      description: "صفحه لندینگ‌ برای سایت‌های مسافرتی و کمپ",
+      skills: ["ReactJS", "NextJS", "Typescript", "Tailwind CSS"],
+      imgBgColor: "bg-green-300",
+   },
+   {
       liveLink: "https://alishariatian.github.io/social-media-clone",
       src: "/img/projects/social.webp",
       githubLink: "https://github.com/AliShariatian/social-media-clone",
