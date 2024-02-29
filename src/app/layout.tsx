@@ -63,8 +63,6 @@ const RootLayout: FC<PropsWithChildren> = ({ children }): JSX.Element => {
             <PageLoadingProgressBar />
 
             <div className="relative flex h-full w-full flex-col justify-between">
-               {/* Background blur effect */}
-               <div className="gradient absolute -left-44 -top-44 size-60 opacity-50" />
                <Navbar />
                <PageTransition>{children}</PageTransition>
                <Footer />
