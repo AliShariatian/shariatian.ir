@@ -4,6 +4,7 @@
 
 :root {
    --slate950: #020617;
+   color-scheme: dark;
 }
 
 .hover-scale:hover {
