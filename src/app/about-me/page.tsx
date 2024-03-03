@@ -32,20 +32,25 @@ const AboutMePage: FC = (): JSX.Element => {
          </ShowWhenScroll>
 
          {/* Skills */}
-         <section className="my-48">
+         <section className="mt-52 mb-64 flex flex-col items-center justify-center">
+            <div className="mb-20">
+               <ShowWhenScroll>
+                  <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.mainSkillsTitle}</h4>
+               </ShowWhenScroll>
+            </div>
             <ShowWhenScroll>
                <Skills />
             </ShowWhenScroll>
          </section>
 
+         {/* Projects */}
          <section className="flex flex-col items-center justify-center">
-            <div className="my-28">
+            <div className="mb-28">
                <ShowWhenScroll>
                   <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.projectsTitle}</h4>
                </ShowWhenScroll>
             </div>
 
-            {/* Projects card */}
             <div className="grid grid-cols-1 gap-14 px-5 xl:grid-cols-3 xl:gap-10 xl:px-20">
                {projects.map((item: ProjectType) => (
                   <ProjectCard

@@ -30,16 +30,15 @@ export const Frontend_skills: Frontend_skillType[] = [
       width: 80,
       height: 80,
    },
-
    {
-      skill_name: "Material UI",
-      image: "/img/skills/mui.svg",
+      skill_name: "React JS",
+      image: "/img/skills/reactjs.svg",
       width: 80,
       height: 80,
    },
    {
-      skill_name: "React JS",
-      image: "/img/skills/reactjs.svg",
+      skill_name: "Next JS ",
+      image: "/img/skills/nextjs.svg",
       width: 80,
       height: 80,
    },
@@ -49,12 +48,11 @@ export const Frontend_skills: Frontend_skillType[] = [
       width: 80,
       height: 80,
    },
-
    {
-      skill_name: "Next JS ",
-      image: "/img/skills/nextjs.svg",
-      width: 80,
-      height: 80,
+      skill_name: "React Query",
+      image: "/img/skills/react-query.svg",
+      width: 70,
+      height: 70,
    },
    {
       skill_name: "Tailwind CSS",
@@ -63,10 +61,10 @@ export const Frontend_skills: Frontend_skillType[] = [
       height: 80,
    },
    {
-      skill_name: "Framer Motion",
-      image: "/img/skills/framer-motion.svg",
-      width: 65,
-      height: 65,
+      skill_name: "Material UI",
+      image: "/img/skills/mui.svg",
+      width: 80,
+      height: 80,
    },
    {
       skill_name: "Git",
@@ -80,4 +78,5 @@ export const Frontend_skills: Frontend_skillType[] = [
       width: 75,
       height: 75,
    },
+  
 ];
