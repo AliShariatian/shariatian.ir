@@ -19,15 +19,13 @@ const FrozenRouter: FC<PropsWithChildren> = ({ children }): JSX.Element => {
 
 const variants = {
    // hidden
-   initial: { opacity: 0, x: 0, y: 0 },
+   initial: { opacity: 0 },
    // enter
    animate: {
       opacity: 1,
-      x: 0,
-      y: 0,
    },
    // exit
-   exit: { opacity: 0, x: 0, y: -100 },
+   exit: { opacity: 0 },
 };
 
 const PageTransitionEffect: FC<PropsWithChildren> = ({ children }): JSX.Element => {

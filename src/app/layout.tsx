@@ -62,12 +62,14 @@ const RootLayout: FC<PropsWithChildren> = ({ children }): JSX.Element => {
          >
             <PageLoadingProgressBar />
             {/* In center of page gradient effect */}
-            <div className="gradient absolute left-1/2 top-0 size-3/5 -translate-x-1/2 opacity-5 -z-[90]" />
+            <div className="gradient absolute left-1/2 top-0 -z-[90] size-3/5 -translate-x-1/2 opacity-5" />
 
             <div className="flex h-full w-full flex-col justify-between">
                <Navbar />
                <PageTransition>{children}</PageTransition>
-               <Footer />
+               <PageTransition>
+                  <Footer />
+               </PageTransition>
             </div>
          </body>
       </html>
