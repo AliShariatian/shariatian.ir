@@ -61,6 +61,8 @@ const RootLayout: FC<PropsWithChildren> = ({ children }): JSX.Element => {
             className={`${danaFont.variable} ${morabbaFont.variable} ${jetBrainsFont.variable} bgDotPattern relative h-full overflow-x-hidden bg-slate-950 font-dana text-slate-100 transition-all duration-200 ease-in`}
          >
             <PageLoadingProgressBar />
+            {/* In center of page gradient effect */}
+            <div className="gradient absolute left-1/2 top-0 size-3/5 -translate-x-1/2 opacity-5 -z-[90]" />
 
             <div className="flex h-full w-full flex-col justify-between">
                <Navbar />

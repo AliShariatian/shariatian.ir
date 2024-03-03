@@ -4,6 +4,7 @@ import { FC } from "react";
 import Title from "@/components/sub/Title";
 import ConsoleLog from "@/components/sub/ConsoleLog";
 import { blogPageTexts, metaTitle } from "@/utils/persianTexts";
+import ShowWhenScroll from "@/components/effects/ShowWhenScroll";
 
 export const metadata: Metadata = {
    title: `${metaTitle} نوشته‌ها`,
@@ -17,7 +18,9 @@ const BlogPage: FC = (): JSX.Element => {
             <Title title={blogPageTexts.BlogsTitle} />
          </main>
 
-         <ConsoleLog />
+         <ShowWhenScroll>
+            <ConsoleLog />
+         </ShowWhenScroll>
       </div>
    );
 };
