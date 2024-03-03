@@ -1,7 +1,9 @@
 import { FC } from "react";
-import Image from "next/image";
-import { aboutMePageTexts } from "@/utils/persianTexts";
+
 import A from "./A/A";
+import Image from "next/image";
+import ShowWhenScroll from "../effects/ShowWhenScroll";
+import { aboutMePageTexts } from "@/utils/persianTexts";
 
 type Props = {
    src: string;
@@ -15,7 +17,7 @@ type Props = {
 
 const ProjectCard: FC<Props> = ({ src, liveLink, githubLink, title, description, skills, imgBgColor = "bg-blue-200" }): JSX.Element => {
    return (
-      <div className="group/img relative overflow-hidden rounded-2xl border border-slate-900 bg-slate-950 shadow-md">
+      <ShowWhenScroll amount={0.1} className="group/img relative overflow-hidden rounded-2xl border border-slate-900 bg-slate-950 shadow-md">
          {/* Image */}
          <A href={liveLink} target="_blank" className="relative">
             <div className={`${imgBgColor} overflow-hidden rounded-2xl p-9`}>
@@ -79,7 +81,7 @@ const ProjectCard: FC<Props> = ({ src, liveLink, githubLink, title, description,
                ))}
             </div>
          </div>
-      </div>
+      </ShowWhenScroll>
    );
 };
 

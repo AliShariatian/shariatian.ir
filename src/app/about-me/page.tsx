@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { FC } from "react";
 
-import Title from "@/components/sub/Title";
-import { aboutMePageTexts, metaTitle } from "@/utils/persianTexts";
-import ProjectCard from "@/components/sub/ProjectCart";
 import Image from "next/image";
+import Title from "@/components/sub/Title";
 import Skills from "@/components/sub/Skills";
+import ProjectCard from "@/components/sub/ProjectCart";
+import ShowWhenScroll from "@/components/effects/ShowWhenScroll";
+
+import { aboutMePageTexts, metaTitle } from "@/utils/persianTexts";
 import { projects, ProjectType } from "@/utils/projects";
 
 export const metadata: Metadata = {
@@ -20,21 +22,28 @@ const AboutMePage: FC = (): JSX.Element => {
             <Title title={aboutMePageTexts.aboutMeTitle} />
          </main>
 
-         <p className="px-9 text-justify leading-8 text-slate-300 xl:w-1/2 xl:px-5">{aboutMePageTexts.aboutMe}</p>
+         <ShowWhenScroll>
+            <p className="mx-auto px-9 text-justify leading-8 text-slate-300 xl:w-1/2 xl:px-5">{aboutMePageTexts.aboutMe}</p>
+         </ShowWhenScroll>
+
          {/* Arrow */}
-         <Image src="/img/curved-arrow.svg" alt="arrow" width={90} height={90} className="mt-9 -rotate-[15deg] scale-x-[-1] opacity-70 invert" />
+         <ShowWhenScroll>
+            <Image src="/img/curved-arrow.svg" alt="arrow" width={90} height={90} className="mt-9 -rotate-[15deg] scale-x-[-1] opacity-70 invert" />
+         </ShowWhenScroll>
 
          {/* Skills */}
-         <section className="relative my-28">
-            <div className="gradient absolute left-1/2 top-28 h-16 w-4/5 -translate-x-1/2 opacity-30" />
-            <Skills />
+         <section className="my-48">
+            <ShowWhenScroll>
+               <Skills />
+            </ShowWhenScroll>
          </section>
 
-         <section className="relative flex flex-col items-center justify-center">
-            <h4 className="my-28 text-4xl font-extrabold">{aboutMePageTexts.projects.projectsTitle}</h4>
-            {/* Background blur effect */}
-            <div className="gradient absolute right-32 top-72 size-64 opacity-30" />
-            <div className="gradient absolute left-32 top-72 size-64 opacity-30" />
+         <section className="flex flex-col items-center justify-center">
+            <div className="my-28">
+               <ShowWhenScroll>
+                  <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.projectsTitle}</h4>
+               </ShowWhenScroll>
+            </div>
 
             {/* Projects card */}
             <div className="grid grid-cols-1 gap-14 px-5 xl:grid-cols-3 xl:gap-10 xl:px-20">

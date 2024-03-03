@@ -10,7 +10,7 @@ const Skills: FC<Props> = ({ scale = 60 }): JSX.Element => {
    return (
       <section
          dir="ltr"
-         className="relative z-20 flex h-full flex-col items-center justify-center gap-3 overflow-hidden py-20"
+         className="relative z-20 flex h-full flex-col items-center justify-center gap-3 overflow-hidden"
          style={{ transform: "scale(0.9)" }}
       >
          {/* skills */}

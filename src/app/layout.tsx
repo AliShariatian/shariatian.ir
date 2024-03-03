@@ -62,7 +62,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }): JSX.Element => {
          >
             <PageLoadingProgressBar />
 
-            <div className="relative flex h-full w-full flex-col justify-between">
+            <div className="flex h-full w-full flex-col justify-between">
                <Navbar />
                <PageTransition>{children}</PageTransition>
                <Footer />
