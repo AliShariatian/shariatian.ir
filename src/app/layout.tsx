@@ -66,7 +66,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }): JSX.Element => {
 
             <div className="flex h-full w-full flex-col justify-between">
                <Navbar />
-               <PageTransition>{children}</PageTransition>
+               <PageTransition className="mt-32 xl:mt-40">{children}</PageTransition>
                <PageTransition>
                   <Footer />
                </PageTransition>

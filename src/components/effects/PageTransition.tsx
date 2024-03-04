@@ -28,13 +28,18 @@ const variants = {
    exit: { opacity: 0 },
 };
 
-const PageTransitionEffect: FC<PropsWithChildren> = ({ children }): JSX.Element => {
+type PageTransitionEffectPropsType = {
+   children: React.ReactNode;
+   className?: string;
+};
+
+const PageTransitionEffect: FC<PageTransitionEffectPropsType> = ({ children, className }): JSX.Element => {
    // The `key` is tied to the url using the `usePathname` hook.
    const key = usePathname();
 
    return (
       <AnimatePresence mode="wait">
-         <motion.div key={key} initial="initial" animate="animate" exit="exit" variants={variants} transition={{ type: "linear" }} className="mt-32 xl:mt-40">
+         <motion.div key={key} initial="initial" animate="animate" exit="exit" variants={variants} transition={{ type: "linear" }} className={className}>
             <FrozenRouter>{children}</FrozenRouter>
          </motion.div>
       </AnimatePresence>
