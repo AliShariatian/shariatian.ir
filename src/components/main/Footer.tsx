@@ -2,9 +2,10 @@
 
 import { FC } from "react";
 import { motion } from "framer-motion";
-import { footerTexts } from "@/utils/persianTexts";
-import Social from "../sub/Social";
 import { footerSocials } from "@/utils/social";
+import { footerTexts } from "@/utils/persianTexts";
+// COMPONENT
+import { Social } from "@/components";
 
 const Footer: FC = (): JSX.Element => {
    return (

@@ -1,12 +1,11 @@
 "use client";
 
 import { FC } from "react";
-import A from "../sub/A/A";
 import { usePathname } from "next/navigation";
 import { navbarItems, navbarItemsType } from "@/utils/persianTexts";
-import Social from "../sub/Social";
 import { topNavBarSocials } from "@/utils/social";
-import NavbarHideOnScroll from "../effects/NavbarHideOnScroll";
+// COMPONENT
+import { A, Social, NavbarHideOnScroll } from "@/components";
 
 const Navbar: FC = (): JSX.Element => {
    const currentPath = usePathname();

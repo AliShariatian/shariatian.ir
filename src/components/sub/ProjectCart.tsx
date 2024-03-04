@@ -1,9 +1,9 @@
 import { FC } from "react";
 
-import A from "./A/A";
 import Image from "next/image";
-import ShowWhenScroll from "../effects/ShowWhenScroll";
 import { aboutMePageTexts } from "@/utils/persianTexts";
+// COMPONENT
+import { A, ShowWhenScroll } from "@/components";
 
 type Props = {
    src: string;

@@ -2,11 +2,8 @@
 import type { Metadata } from "next";
 import { FC, PropsWithChildren } from "react";
 // COMPONENTS
-import Navbar from "@/components/main/Navbar";
-import Footer from "@/components/main/Footer";
-import PageTransition from "@/components/effects/PageTransition";
-import PageLoadingProgressBar from "@/components/effects/PageLoadingProgressBar";
-// FONTS and STYLE
+import { Navbar, Footer, PageTransition, PageLoadingProgressBar } from "@/components";
+// FONT and STYLE
 import { danaFont, jetBrainsFont, morabbaFont } from "@/utils/font";
 import "./globals.css";
 // TEXTS

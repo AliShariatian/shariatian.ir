@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { warning404Text } from "@/utils/persianTexts";
-import A from "@/components/sub/A/A";
+// COMPONENT
+import { A } from "@/components";
 
 const NotFound404Page: FC = (): JSX.Element => {
    return (

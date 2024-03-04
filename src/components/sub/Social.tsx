@@ -1,7 +1,8 @@
 import { FC } from "react";
-import { SocialType } from "@/utils/social";
 import Image from "next/image";
-import A from "./A/A";
+import { SocialType } from "@/utils/social";
+// COMPONENT
+import { A } from "@/components";
 
 type Props = {
    scale?: number;

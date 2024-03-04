@@ -2,7 +2,8 @@
 
 import { FC } from "react";
 import { motion } from "framer-motion";
-import TiltEffect from "../effects/TiltEffect";
+// COMPONENT
+import { TiltEffect } from "@/components";
 
 type Props = {
    title: string;

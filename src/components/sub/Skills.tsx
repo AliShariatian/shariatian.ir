@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { Frontend_skills, Frontend_skillType } from "@/utils/skills";
 import Image from "next/image";
+import { Frontend_skills, Frontend_skillType } from "@/utils/skills";
 
 type Props = {
    scale?: number;
