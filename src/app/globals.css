@@ -9,7 +9,8 @@
 
 /* Icon hover effect */
 .hover-scale:hover {
-   scale: 1.3;
+   --hover-scale-value: 1.3;
+   scale: var(--hover-scale-value);
    transition: scale 0.2s cubic-bezier(1, 0.03, 0, 1.01);
 }
 

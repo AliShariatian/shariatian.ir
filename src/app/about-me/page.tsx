@@ -44,7 +44,7 @@ const AboutMePage: FC = (): JSX.Element => {
 
          {/* Projects */}
          <section className="flex flex-col items-center justify-center">
-            <div className="mb-28">
+            <div className="mb-24">
                <ShowWhenScroll>
                   <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.projectsTitle}</h4>
                </ShowWhenScroll>
