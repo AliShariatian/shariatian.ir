@@ -1,7 +1,10 @@
+// TYPE
 import { FC } from "react";
+// UTIL
 import { warning404Text } from "@/utils/persianTexts";
 // COMPONENT
 import { A } from "@/components";
+// ---------------------------------
 
 const NotFound404Page: FC = (): JSX.Element => {
    return (

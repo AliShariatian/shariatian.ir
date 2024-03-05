@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+// TYPE
 import { FC } from "react";
-
-import Title from "@/components/sub/Title";
-import ConsoleLog from "@/components/sub/ConsoleLog";
+import type { Metadata } from "next";
+// UTIL
 import { blogPageTexts, metaTitle } from "@/utils/persianTexts";
-import ShowWhenScroll from "@/components/effects/ShowWhenScroll";
+// COMPONENT
+import { Title, ConsoleLog, ShowWhenScroll } from "@/components";
+// ----------------------------------------------------------------
 
 export const metadata: Metadata = {
    title: `${metaTitle} نوشته‌ها`,

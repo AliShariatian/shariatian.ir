@@ -1,14 +1,13 @@
+// TYPE
 import type { Metadata } from "next";
 import { FC } from "react";
-
-import Image from "next/image";
-import Title from "@/components/sub/Title";
-import Skills from "@/components/sub/Skills";
-import ProjectCard from "@/components/sub/ProjectCart";
-import ShowWhenScroll from "@/components/effects/ShowWhenScroll";
-
-import { aboutMePageTexts, metaTitle } from "@/utils/persianTexts";
+// UTIL
 import { projects, ProjectType } from "@/utils/projects";
+import { aboutMePageTexts, metaTitle } from "@/utils/persianTexts";
+// COMPONENT
+import Image from "next/image";
+import { Title, Skills, ProjectCard, ShowWhenScroll } from "@/components";
+// ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
    title: `${metaTitle} درباره من`,
@@ -32,7 +31,7 @@ const AboutMePage: FC = (): JSX.Element => {
          </ShowWhenScroll>
 
          {/* Skills */}
-         <section className="mt-52 mb-64 flex flex-col items-center justify-center">
+         <section className="mb-64 mt-52 flex flex-col items-center justify-center">
             <div className="mb-20">
                <ShowWhenScroll>
                   <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.mainSkillsTitle}</h4>

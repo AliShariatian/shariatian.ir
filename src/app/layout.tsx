@@ -1,13 +1,15 @@
 // TYPES
 import type { Metadata } from "next";
 import { FC, PropsWithChildren } from "react";
-// COMPONENTS
-import { Navbar, Footer, PageTransition, PageLoadingProgressBar } from "@/components";
-// FONT and STYLE
-import { danaFont, jetBrainsFont, morabbaFont } from "@/utils/font";
-import "./globals.css";
 // TEXTS
 import { metaTitle } from "@/utils/persianTexts";
+// FONT
+import { danaFont, jetBrainsFont, morabbaFont } from "@/utils/font";
+// STYLE
+import "./globals.css";
+// COMPONENT
+import { Navbar, Footer, PageTransition, PageLoadingProgressBar } from "@/components";
+// -------------------------------------------------------------------------------------
 
 export const metadata: Metadata = {
    title: `${metaTitle} توسعه‌دهنده فرانت‌اند`,
