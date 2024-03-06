@@ -14,7 +14,7 @@ export const projects: ProjectType[] = [
       src: "/img/projects/xshop.webp",
       githubLink: "https://github.com/AliShariatian/xshop",
       title: "وبسایت فروشگاهی",
-      description: "طراحی کامل فرانت‌اند فروشگاه خرید پوشاک",
+      description: "طراحی فرانت‌اند فروشگاه خرید پوشاک",
       skills: ["ReactJS", "NextJS", "Typescript", "PWA", "Axios", "Redux Toolkit", "React Query", "i18Next", "Tailwind CSS"],
       imgBgColor: "bg-gray-400",
    },
