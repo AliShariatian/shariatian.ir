@@ -42,7 +42,7 @@ export const aboutMePageTexts: {
    projects: {
       mainSkillsTitle: "مهارت‌های اصلی",
       projectsTitle: "نمونه‌کارها",
-      skillUsed: "ابزارهای استفاده شده در این پروژه",
+      skillUsed: "ابزارهای اصلی استفاده شده در این پروژه",
    },
 };
 

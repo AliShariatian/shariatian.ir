@@ -10,6 +10,24 @@ export type ProjectType = {
 
 export const projects: ProjectType[] = [
    {
+      liveLink: "https://xshop.shariatian.ir",
+      src: "/img/projects/xshop.webp",
+      githubLink: "https://github.com/AliShariatian/xshop",
+      title: "وبسایت فروشگاهی",
+      description: "طراحی کامل فرانت‌اند فروشگاه خرید پوشاک",
+      skills: ["ReactJS", "NextJS", "Typescript", "PWA", "Axios", "Redux Toolkit", "React Query", "i18Next", "Tailwind CSS"],
+      imgBgColor: "bg-gray-400",
+   },
+   {
+      liveLink: "https://toolbox.shariatian.ir",
+      src: "/img/projects/toolbox.webp",
+      githubLink: "https://github.com/AliShariatian/toolbox",
+      title: "ابزارهای برنامه‌نویسی",
+      description: "وبسایت مجموعه ابزارهای برنامه‌نویسی فرانت‌اند",
+      skills: ["ReactJS", "NextJS", "Typescript", "Tailwind CSS"],
+      imgBgColor: "bg-sky-200",
+   },
+   {
       liveLink: "https://travel.shariatian.ir",
       src: "/img/projects/travel.webp",
       githubLink: "https://github.com/AliShariatian/Travel-LandingPage",
