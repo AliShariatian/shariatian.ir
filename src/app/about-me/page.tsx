@@ -32,11 +32,10 @@ const AboutMePage: FC = (): JSX.Element => {
 
          {/* Skills */}
          <section className="mb-64 mt-52 flex flex-col items-center justify-center">
-            <div className="mb-20">
-               <ShowWhenScroll>
-                  <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.mainSkillsTitle}</h4>
-               </ShowWhenScroll>
-            </div>
+            <ShowWhenScroll className="mb-20">
+               <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.mainSkillsTitle}</h4>
+            </ShowWhenScroll>
+
             <ShowWhenScroll>
                <Skills />
             </ShowWhenScroll>
@@ -44,13 +43,11 @@ const AboutMePage: FC = (): JSX.Element => {
 
          {/* Projects */}
          <section className="flex flex-col items-center justify-center">
-            <div className="mb-24">
-               <ShowWhenScroll>
-                  <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.projectsTitle}</h4>
-               </ShowWhenScroll>
-            </div>
+            <ShowWhenScroll className="mb-24">
+               <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.projectsTitle}</h4>
+            </ShowWhenScroll>
 
-            <div className="grid grid-cols-1 gap-14 px-5 xl:grid-cols-3 xl:gap-10 xl:px-20">
+            <ShowWhenScroll className="grid grid-cols-1 gap-14 px-5 xl:grid-cols-3 xl:gap-10 xl:px-20">
                {projects.map((item: ProjectType) => (
                   <ProjectCard
                      key={item.liveLink}
@@ -63,7 +60,7 @@ const AboutMePage: FC = (): JSX.Element => {
                      imgBgColor={item.imgBgColor}
                   />
                ))}
-            </div>
+            </ShowWhenScroll>
          </section>
       </div>
    );

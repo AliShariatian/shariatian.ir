@@ -4,8 +4,8 @@ import { FC, PropsWithChildren } from "react";
 import { motion } from "framer-motion";
 
 type Props = {
-   className?: string;
    amount?: number;
+   className?: string;
 };
 
 const ShowWhenScroll: FC<PropsWithChildren<Props>> = ({ children, className, amount = 0 }) => {
@@ -22,7 +22,7 @@ const ShowWhenScroll: FC<PropsWithChildren<Props>> = ({ children, className, amo
          }}
          variants={{
             visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 100 },
+            hidden: { opacity: 0, y: 99 },
          }}
          className={className}
       >

@@ -17,7 +17,7 @@ type Props = {
 
 const ProjectCard: FC<Props> = ({ src, liveLink, githubLink, title, description, skills, imgBgColor = "bg-blue-200" }): JSX.Element => {
    return (
-      <ShowWhenScroll amount={0.1} className="group/img relative overflow-hidden rounded-2xl border border-slate-900 bg-slate-950 shadow-md">
+      <div className="group/img relative overflow-hidden rounded-2xl border border-slate-900 bg-slate-950 shadow-md">
          {/* Image */}
          <A href={liveLink} target="_blank" className="relative">
             <div className={`${imgBgColor} overflow-hidden rounded-2xl p-9`}>
@@ -31,9 +31,9 @@ const ProjectCard: FC<Props> = ({ src, liveLink, githubLink, title, description,
             </div>
             <div
                title="رفتن به پروژه"
-               className="duration-400 absolute left-0 top-0 flex size-full items-center justify-center bg-slate-950/70 transition ease-out group-hover/img:opacity-0"
+               className="duration-400 absolute left-1/2 top-0 flex h-full w-[105%] -translate-x-1/2 items-center justify-center rounded-2xl bg-slate-950/70 transition ease-out group-hover/img:opacity-0"
             >
-               <Image src="/img/external-link.svg" className="opacity-70" alt="Go to project icon" width={35} height={35} />
+               <Image src="/img/external-link.svg" className="opacity-70" alt="Go to project" width={35} height={35} />
             </div>
          </A>
 
@@ -81,7 +81,7 @@ const ProjectCard: FC<Props> = ({ src, liveLink, githubLink, title, description,
                ))}
             </div>
          </div>
-      </ShowWhenScroll>
+      </div>
    );
 };
 

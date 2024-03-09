@@ -2,8 +2,9 @@
 
 import { FC } from "react";
 import { usePathname } from "next/navigation";
+// UTIL
 import { navbarItems, navbarItemsType } from "@/utils/persianTexts";
-import { topNavBarSocials } from "@/utils/social";
+import { socials } from "@/utils/social";
 // COMPONENT
 import { A, Social, NavbarHideOnScroll } from "@/components";
 
@@ -35,7 +36,7 @@ const Navbar: FC = (): JSX.Element => {
 
             {/* Social links */}
             <div className="hidden flex-row-reverse items-baseline gap-5 opacity-95 xl:flex">
-               <Social data={topNavBarSocials} scale={24} />
+               <Social data={socials.slice(0, 3)} scale={24} />
             </div>
          </nav>
       </NavbarHideOnScroll>
