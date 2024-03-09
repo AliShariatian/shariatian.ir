@@ -9,7 +9,7 @@ export type navbarItemsType = {
 
 export const navbarItems: navbarItemsType[] = [
    { slug: "/", title: "علی شریعتیان" },
-   { slug: "", title: "" },
+   { slug: "line", title: "line" },
    { slug: "/blogs", title: "نوشته‌ها" },
    { slug: "/about-me", title: "درباره من" },
 ];
@@ -20,7 +20,7 @@ export const HomePageTexts: {
    description: string;
 } = {
    aliShariatian: "عــلــی شـــریـعـتـیـان",
-   description: "توسعه‌دهنده رابط‌ کاربری وبسایت‌های دوست‌داشتنی و زیبا برای خدمات ارزشمند شما",
+   description: "توسعه‌دهنده رابط‌ کاربری وبسایت‌های دوست‌داشتنی برای خدمات ارزشمند شما",
 };
 
 // About me page
