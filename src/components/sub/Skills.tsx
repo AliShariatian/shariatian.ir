@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
-import { Frontend_skills, Frontend_skillType } from "@/data/skills";
+import { Frontend_skills, Frontend_skillType } from "@/public/data/skills";
 
 const Skills: FC = (): JSX.Element => {
    const hoverScaleValue = { "--hover-scale-value": 1.125 } as React.CSSProperties;

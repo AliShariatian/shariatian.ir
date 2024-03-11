@@ -19,8 +19,8 @@ export const projects: ProjectType[] = [
       imgBgColor: "bg-gray-300",
    },
    {
-      liveLink: "https://toolbox.shariatian.ir",
-      src: "/img/projects/toolbox.webp",
+      liveLink: "https://atianabzar.ir/",
+      src: "/img/projects/atianabzar.webp",
       githubLink: "https://github.com/AliShariatian/toolbox",
       title: "آتیان ابزار",
       description: "وبسایت مجموعه ابزارهای محاسباتی روزمره",

@@ -3,8 +3,8 @@
 import { FC } from "react";
 import { usePathname } from "next/navigation";
 // UTIL
-import { navbarItems, navbarItemsType } from "@/data/persianTexts";
-import { socials } from "@/data/social";
+import { navbarItems, navbarItemsType } from "@/public/data/persianTexts";
+import { socials } from "@/public/data/social";
 // COMPONENT
 import { A, Social, NavbarHideOnScroll } from "@/components";
 

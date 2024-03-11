@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 import Image from "next/image";
-import { aboutMePageTexts } from "@/data/persianTexts";
+import { aboutMePageTexts } from "@/public/data/persianTexts";
 // COMPONENT
 import { A, ShowWhenScroll } from "@/components";
 

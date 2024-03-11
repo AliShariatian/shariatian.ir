@@ -2,8 +2,8 @@
 import type { Metadata } from "next";
 import { FC } from "react";
 // UTIL
-import { projects, ProjectType } from "@/data/projects";
-import { aboutMePageTexts, metaTitle } from "@/data/persianTexts";
+import { projects, ProjectType } from "@/public/data/projects";
+import { aboutMePageTexts, metaTitle } from "@/public/data/persianTexts";
 // COMPONENT
 import Image from "next/image";
 import { Title, Skills, ProjectCard, ShowWhenScroll } from "@/components";

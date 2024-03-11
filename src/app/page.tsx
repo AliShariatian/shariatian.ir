@@ -3,9 +3,8 @@
 // TYPE
 import { FC } from "react";
 // UTIL
-import { HomePageTexts } from "@/data/persianTexts";
+import { HomePageTexts } from "@/public/data/persianTexts";
 // COMPONENT
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { TiltEffect } from "@/components";
 // -------------------------------------------
@@ -13,14 +12,6 @@ import { TiltEffect } from "@/components";
 const HomePage: FC = (): JSX.Element => {
    return (
       <div className="mt-20 flex flex-col items-center justify-center xl:mt-9">
-         <Image
-            alt="shine"
-            src="/img/shine.avif"
-            width={500}
-            height={500}
-            className="absolute right-0 top-0 z-10 h-[280px] w-auto -scale-x-[1] opacity-40 max-xl:hidden"
-         />
-
          {/* MAIN */}
          <main className="w-full text-center">
             <div className="relative text-ellipsis text-center">

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
-import { SocialType } from "@/data/social";
+import { SocialType } from "@/public/data/social";
 // COMPONENT
 import { A } from "@/components";
 

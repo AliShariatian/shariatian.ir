@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { FC, PropsWithChildren } from "react";
 // TEXTS
-import { metaTitle } from "@/data/persianTexts";
+import { metaTitle } from "@/public/data/persianTexts";
 // FONT
 import { danaFont, jetBrainsFont, morabbaFont } from "@/public/font";
 // STYLE

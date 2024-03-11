@@ -3,8 +3,8 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
 // UTIL
-import { socials } from "@/data/social";
-import { footerTexts } from "@/data/persianTexts";
+import { socials } from "@/public/data/social";
+import { footerTexts } from "@/public/data/persianTexts";
 // COMPONENT
 import { Social } from "@/components";
 

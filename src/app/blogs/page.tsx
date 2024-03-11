@@ -2,7 +2,7 @@
 import { FC } from "react";
 import type { Metadata } from "next";
 // UTIL
-import { blogPageTexts, metaTitle } from "@/data/persianTexts";
+import { blogPageTexts, metaTitle } from "@/public/data/persianTexts";
 // COMPONENT
 import { Title, ConsoleLog, ShowWhenScroll } from "@/components";
 // ----------------------------------------------------------------
