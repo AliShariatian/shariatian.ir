@@ -6,7 +6,7 @@ import { projects, ProjectType } from "@/data/projects";
 import { aboutMePageTexts, metaTitle } from "@/data/persianTexts";
 // COMPONENT
 import Image from "next/image";
-import { Title, Skills, ProjectCard, ShowWhenScroll } from "@/components";
+import { Title, Skills, ProjectCard, ShowWhenScroll, Lamp } from "@/components";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
@@ -24,6 +24,7 @@ const AboutMePage: FC = (): JSX.Element => {
          <ShowWhenScroll>
             <p className="mx-auto px-9 text-justify leading-8 text-slate-300 xl:w-1/2 xl:px-5">{aboutMePageTexts.aboutMe}</p>
          </ShowWhenScroll>
+         <Lamp />
 
          {/* Arrow */}
          <ShowWhenScroll>
@@ -37,7 +38,7 @@ const AboutMePage: FC = (): JSX.Element => {
          </ShowWhenScroll>
 
          {/* Skills */}
-         <section className="mb-64 mt-52 flex flex-col items-center justify-center">
+         <section className="mb-64 mt-52 flex w-full flex-col items-center justify-center">
             <ShowWhenScroll className="mb-20">
                <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.mainSkillsTitle}</h4>
             </ShowWhenScroll>
@@ -48,7 +49,7 @@ const AboutMePage: FC = (): JSX.Element => {
          </section>
 
          {/* Projects */}
-         <section className="flex flex-col items-center justify-center">
+         <section className="relative flex flex-col items-center justify-center">
             <ShowWhenScroll className="mb-24">
                <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.projectsTitle}</h4>
             </ShowWhenScroll>
