@@ -17,7 +17,7 @@ const Lamp: FC = (): JSX.Element => {
          <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 1 }}
             variants={variants(99)}
             className="absolute -right-[50%] top-0 -z-10 -translate-y-1/3"
@@ -32,7 +32,7 @@ const Lamp: FC = (): JSX.Element => {
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             variants={variants(-99)}
             className="absolute -left-[50%] top-0 -z-10 -translate-y-1/3"
          >

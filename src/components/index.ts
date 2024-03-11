@@ -7,16 +7,16 @@ import TiltEffect from "@/components/effects/TiltEffect";
 import Lamp from "./effects/Lamp";
 
 // MAIN
-import Footer from "./main/Footer";
-import Navbar from "./main/Navbar";
+import Footer from "./layout/Footer";
+import Navbar from "./layout/Navbar";
 
 // SUB
 import ProjectCard from "./sub/ProjectCart";
 import ConsoleLog from "./sub/ConsoleLog";
 import Skills from "./sub/Skills";
-import Social from "./sub/Social";
-import Title from "./sub/Title";
-import A from "./sub/A/A";
+import Social from "./layout/Social";
+import Title from "./layout/Title";
+import A from "./layout/A/A";
 
 // EXPORT
 export {
