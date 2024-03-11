@@ -2,8 +2,8 @@
 import type { Metadata } from "next";
 import { FC } from "react";
 // UTIL
-import { projects, ProjectType } from "@/utils/projects";
-import { aboutMePageTexts, metaTitle } from "@/utils/persianTexts";
+import { projects, ProjectType } from "@/data/projects";
+import { aboutMePageTexts, metaTitle } from "@/data/persianTexts";
 // COMPONENT
 import Image from "next/image";
 import { Title, Skills, ProjectCard, ShowWhenScroll } from "@/components";
@@ -27,7 +27,13 @@ const AboutMePage: FC = (): JSX.Element => {
 
          {/* Arrow */}
          <ShowWhenScroll>
-            <Image src="/img/curved-arrow.svg" alt="arrow" width={90} height={90} className="mt-9 -rotate-[15deg] scale-x-[-1] opacity-70 invert" />
+            <Image
+               src="/img/curved-arrow.svg"
+               alt="arrow"
+               width={90}
+               height={90}
+               className="mt-9 -rotate-[15deg] scale-x-[-1] opacity-70 invert"
+            />
          </ShowWhenScroll>
 
          {/* Skills */}

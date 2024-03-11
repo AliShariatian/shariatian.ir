@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 import Image from "next/image";
-import { aboutMePageTexts } from "@/utils/persianTexts";
+import { aboutMePageTexts } from "@/data/persianTexts";
 // COMPONENT
 import { A, ShowWhenScroll } from "@/components";
 
@@ -15,7 +15,15 @@ type Props = {
    imgBgColor?: string;
 };
 
-const ProjectCard: FC<Props> = ({ src, liveLink, githubLink, title, description, skills, imgBgColor = "bg-blue-200" }): JSX.Element => {
+const ProjectCard: FC<Props> = ({
+   src,
+   liveLink,
+   githubLink,
+   title,
+   description,
+   skills,
+   imgBgColor = "bg-blue-200",
+}): JSX.Element => {
    return (
       <div className="group/img relative overflow-hidden rounded-2xl border border-slate-900 bg-slate-950 shadow-md">
          {/* Image */}

@@ -39,7 +39,15 @@ const PageTransitionEffect: FC<PageTransitionEffectPropsType> = ({ children, cla
 
    return (
       <AnimatePresence mode="wait">
-         <motion.div key={key} initial="initial" animate="animate" exit="exit" variants={variants} transition={{ type: "linear" }} className={className}>
+         <motion.div
+            key={key}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            variants={variants}
+            transition={{ type: "linear" }}
+            className={className}
+         >
             <FrozenRouter>{children}</FrozenRouter>
          </motion.div>
       </AnimatePresence>

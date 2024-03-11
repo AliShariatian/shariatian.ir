@@ -1,7 +1,7 @@
 // TYPE
 import { FC } from "react";
 // UTIL
-import { warning404Text } from "@/utils/persianTexts";
+import { warning404Text } from "@/data/persianTexts";
 // COMPONENT
 import { A } from "@/components";
 // ---------------------------------
@@ -9,7 +9,9 @@ import { A } from "@/components";
 const NotFound404Page: FC = (): JSX.Element => {
    return (
       <main className="mt-20 flex flex-col items-center justify-center gap-10 xl:mt-9">
-         <span className="animate-pulse font-dana text-9xl font-bold text-red-600 drop-shadow-[0_0_55px_rgba(255,0,0,0.7)]">404</span>
+         <span className="animate-pulse font-dana text-9xl font-bold text-red-600 drop-shadow-[0_0_55px_rgba(255,0,0,0.7)]">
+            404
+         </span>
          <div className="flex flex-col items-center gap-7">
             <p className="text-lg">{warning404Text}</p>
             <A
