@@ -4,7 +4,6 @@ import NavbarHideOnScroll from "@/components/effects/NavbarHideOnScroll";
 import PageTransition from "@/components/effects/PageTransition";
 import ShowWhenScroll from "@/components/effects/ShowWhenScroll";
 import TiltEffect from "@/components/effects/TiltEffect";
-import Lamp from "./effects/Lamp";
 
 // MAIN
 import Footer from "./layout/Footer";
@@ -25,7 +24,6 @@ export {
    PageTransition,
    ShowWhenScroll,
    TiltEffect,
-   Lamp,
    Footer,
    Navbar,
    ProjectCard,
