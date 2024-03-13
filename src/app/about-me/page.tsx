@@ -6,7 +6,7 @@ import { projects, ProjectType } from "@/public/data/projects";
 import { aboutMePageTexts, metaTitle } from "@/public/data/persianTexts";
 // COMPONENT
 import Image from "next/image";
-import { Title, Skills, ProjectCard, ShowWhenScroll } from "@/components";
+import { Title, Skills, ProjectCard, ShowWhenScroll, TextGenerate } from "@/components";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ const AboutMePage: FC = (): JSX.Element => {
          </main>
 
          <ShowWhenScroll>
-            <p className="mx-auto px-9 text-justify leading-8 text-slate-300 xl:w-1/2 xl:px-5">{aboutMePageTexts.aboutMe}</p>
+            <TextGenerate words={aboutMePageTexts.aboutMe} className="mx-auto px-9 xl:w-1/2 xl:px-5" />
          </ShowWhenScroll>
 
          {/* Arrow */}

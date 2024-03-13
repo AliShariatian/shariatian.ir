@@ -1,9 +1,10 @@
 // EFFECTS
-import PageLoadingProgressBar from "@/components/effects/PageLoadingProgressBar";
-import NavbarHideOnScroll from "@/components/effects/NavbarHideOnScroll";
-import PageTransition from "@/components/effects/PageTransition";
-import ShowWhenScroll from "@/components/effects/ShowWhenScroll";
-import TiltEffect from "@/components/effects/TiltEffect";
+import PageLoadingProgressBar from "./effects/PageLoadingProgressBar";
+import NavbarHideOnScroll from "./effects/NavbarHideOnScroll";
+import PageTransition from "./effects/PageTransition";
+import ShowWhenScroll from "./effects/ShowWhenScroll";
+import TextGenerate from "./effects/textGenerate";
+import TiltEffect from "./effects/TiltEffect";
 
 // MAIN
 import Footer from "./layout/Footer";
@@ -23,6 +24,7 @@ export {
    NavbarHideOnScroll,
    PageTransition,
    ShowWhenScroll,
+   TextGenerate,
    TiltEffect,
    Footer,
    Navbar,
