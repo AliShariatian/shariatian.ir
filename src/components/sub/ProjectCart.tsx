@@ -3,7 +3,8 @@ import { FC } from "react";
 import Image from "next/image";
 import { aboutMePageTexts } from "@/public/data/persianTexts";
 // COMPONENT
-import { A, ShowWhenScroll } from "@/components";
+import { A } from "@/components";
+import { CardContainer } from "@/components/effects/ThreeDCard";
 
 type Props = {
    src: string;
@@ -25,7 +26,7 @@ const ProjectCard: FC<Props> = ({
    imgBgColor = "bg-blue-200",
 }): JSX.Element => {
    return (
-      <div className="group/img relative overflow-hidden rounded-2xl border border-slate-900 bg-slate-950 shadow-2xl transition ease-out hover:border-slate-500/40 hover:shadow-slate-500/20">
+      <CardContainer className="group/img relative overflow-hidden rounded-2xl border border-slate-900 bg-slate-950 shadow-2xl transition ease-out hover:border-slate-500/40 hover:shadow-slate-500/20">
          {/* Image */}
          <A href={liveLink} target="_blank" className="relative">
             <div className={`${imgBgColor} overflow-hidden rounded-2xl p-7`}>
@@ -34,7 +35,7 @@ const ProjectCard: FC<Props> = ({
                   width={500}
                   height={500}
                   alt={title}
-                  className="duration-400 w-full rounded-md object-contain shadow-xl transition ease-out group-hover/img:scale-110"
+                  className="w-full rounded-md object-contain shadow-xl transition duration-300 ease-out group-hover/img:scale-110"
                />
             </div>
             <div
@@ -89,7 +90,7 @@ const ProjectCard: FC<Props> = ({
                ))}
             </div>
          </div>
-      </div>
+      </CardContainer>
    );
 };
 
