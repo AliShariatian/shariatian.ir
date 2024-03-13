@@ -32,7 +32,7 @@ const AboutMePage: FC = (): JSX.Element => {
                alt="arrow"
                width={90}
                height={90}
-               className="mt-9 -rotate-[15deg] scale-x-[-1] opacity-70 invert"
+               className="mt-9 -rotate-[15deg] scale-x-[-1] opacity-50 invert"
             />
          </ShowWhenScroll>
 
