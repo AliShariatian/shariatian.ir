@@ -77,7 +77,7 @@ const ProjectCard: FC<Props> = ({
             </div>
             <p className="text-slate-300">{description}</p>
 
-            <hr className="my-2 border-slate-900" />
+            <hr className="my-1 border-slate-900" />
 
             <span className="-mb-3 text-slate-300">{aboutMePageTexts.projects.skillUsed}:</span>
             {/* Tools */}

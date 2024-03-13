@@ -3,7 +3,7 @@ import PageLoadingProgressBar from "./effects/PageLoadingProgressBar";
 import NavbarHideOnScroll from "./effects/NavbarHideOnScroll";
 import PageTransition from "./effects/PageTransition";
 import ShowWhenScroll from "./effects/ShowWhenScroll";
-import TextGenerate from "./effects/textGenerate";
+import TextGenerate from "./effects/TextGenerate";
 import TiltEffect from "./effects/TiltEffect";
 
 // MAIN
