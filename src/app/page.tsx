@@ -39,11 +39,11 @@ const HomePage: FC = (): JSX.Element => {
             </motion.p>
 
             {/* Gradient line */}
-            <div className="relative -z-10 mx-auto mt-1 opacity-30 *:mx-auto">
-               <div className="absolute inset-x-20 top-0 h-[2px] w-1/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm" />
-               <div className="absolute inset-x-20 top-0 h-px w-2/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
-               <div className="absolute inset-x-60 top-0 h-[5px] w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm" />
-               <div className="absolute inset-x-60 top-0 h-px w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
+            <div className="relative -z-10 mx-auto mt-1 flex flex-col items-center justify-center opacity-30 *:mx-auto">
+               <div className="absolute top-0 h-[2px] w-10/12 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm xl:w-1/4" />
+               <div className="absolute top-0 h-px w-10/12 bg-gradient-to-r from-transparent via-indigo-500 to-transparent xl:w-2/4" />
+               <div className="absolute top-0 h-[5px] w-10/12 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm xl:w-1/4" />
+               <div className="absolute top-0 h-px w-10/12 bg-gradient-to-r from-transparent via-sky-500 to-transparent xl:w-1/4" />
             </div>
          </main>
       </div>
