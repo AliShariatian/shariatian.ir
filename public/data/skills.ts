@@ -63,8 +63,8 @@ export const Frontend_skills: Frontend_skillType[] = [
    {
       skill_name: "Material UI",
       image: "/img/skills/mui.svg",
-      width: 60,
-      height: 60,
+      width: 55,
+      height: 55,
    },
    {
       skill_name: "Progressive Web App",
