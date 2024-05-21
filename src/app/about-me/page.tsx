@@ -21,9 +21,7 @@ const AboutMePage: FC = (): JSX.Element => {
             <Title title={aboutMePageTexts.aboutMeTitle} />
          </main>
 
-         <ShowWhenScroll>
-            <TextGenerate words={aboutMePageTexts.aboutMe} className="mx-auto px-9 xl:w-1/2 xl:px-5" />
-         </ShowWhenScroll>
+         <TextGenerate words={aboutMePageTexts.aboutMe} className="mx-auto px-9 xl:w-1/2 xl:px-5" />
 
          {/* Arrow */}
          <ShowWhenScroll>

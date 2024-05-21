@@ -7,7 +7,7 @@
       "build": "next build",
       "start": "next start",
       "lint": "next lint",
-      "format": "prettier --log-level=warn --write \"./**/*.{tsx,ts,js}\"",
+      "format": "prettier --log-level=warn --write \"./**/*.{tsx,ts,js,jsx}\"",
       "lint:check": "eslint ./src --ext .jsx,.js,.ts,.tsx --ignore-path ./.gitignore"
    },
    "dependencies": {
