@@ -19,15 +19,6 @@ export const projects: ProjectType[] = [
       imgBgColor: "bg-gray-300",
    },
    {
-      liveLink: "https://atianabzar.ir/",
-      src: "/img/projects/atianabzar.webp",
-      githubLink: "https://github.com/AliShariatian/toolbox",
-      title: "آتیان ابزار",
-      description: "وبسایت مجموعه ابزارهای محاسباتی روزمره",
-      skills: ["ReactJS", "NextJS", "Typescript", "Tailwind CSS"],
-      imgBgColor: "bg-sky-300",
-   },
-   {
       liveLink: "https://travel.shariatian.ir",
       src: "/img/projects/travel.webp",
       githubLink: "https://github.com/AliShariatian/Travel-LandingPage",
