@@ -3,7 +3,7 @@
 import { FC } from "react";
 import { usePathname } from "next/navigation";
 // UTIL
-import { navbarItems, navbarItemsType } from "@/public/data/persianTexts";
+import { navbarItems, TNavbarItems } from "@/public/data/persianTexts";
 import { socials } from "@/public/data/social";
 // COMPONENT
 import { A, Social, NavbarHideOnScroll } from "@/components";
@@ -15,7 +15,7 @@ const Navbar: FC = (): JSX.Element => {
       <NavbarHideOnScroll>
          <nav className="fixed right-0 top-0 z-40 flex h-16 w-full items-center justify-between bg-slate-950/10 shadow backdrop-blur-lg xl:h-20 xl:px-28">
             <ul className="mx-auto flex justify-center gap-2 xl:mx-0 xl:mr-20 xl:gap-4">
-               {navbarItems.map((item: navbarItemsType, index: number) => {
+               {navbarItems.map((item: TNavbarItems, index: number) => {
                   {
                      if (index === 1) {
                         return (

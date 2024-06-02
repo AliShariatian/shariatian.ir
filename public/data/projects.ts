@@ -15,8 +15,17 @@ export const projects: ProjectType[] = [
       githubLink: "https://github.com/AliShariatian/xshop",
       title: "وبسایت فروشگاهی",
       description: "طراحی فرانت‌اند فروشگاه خرید پوشاک",
-      skills: ["ReactJS", "NextJS", "Typescript", "PWA", "Axios", "Redux Toolkit", "React Query", "i18Next", "Tailwind CSS"],
+      skills: ["ReactJS", "NextJS", "Typescript", "PWA", "Axios", "Redux Toolkit", "React Query", "Tailwind CSS"],
       imgBgColor: "bg-gray-300",
+   },
+   {
+      liveLink: "https://atianabzar.ir/",
+      src: "/img/projects/atianabzar.webp",
+      githubLink: "https://github.com/AliShariatian/AtianAbzar.ir",
+      title: "آتیان ابزار",
+      description: "وبسایت مجموعه ابزارهای محاسباتی روزمره",
+      skills: ["ReactJS", "NextJS", "Typescript", "Tailwind CSS"],
+      imgBgColor: "bg-sky-300",
    },
    {
       liveLink: "https://travel.shariatian.ir",
