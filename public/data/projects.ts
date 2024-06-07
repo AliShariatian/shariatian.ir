@@ -24,7 +24,7 @@ export const projects: ProjectType[] = [
       githubLink: "https://github.com/AliShariatian/AtianAbzar.ir",
       title: "آتیان ابزار",
       description: "وبسایت مجموعه ابزارهای محاسباتی روزمره",
-      skills: ["ReactJS", "NextJS", "Typescript", "Tailwind CSS"],
+      skills: ["ReactJS", "NextJS", "Typescript", "PWA", "Tailwind CSS"],
       imgBgColor: "bg-sky-300",
    },
    {

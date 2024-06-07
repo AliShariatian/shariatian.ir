@@ -1,37 +1,20 @@
 // EFFECTS
-import PageLoadingProgressBar from "./effects/PageLoadingProgressBar";
-import NavbarHideOnScroll from "./effects/NavbarHideOnScroll";
-import PageTransition from "./effects/PageTransition";
-import ShowWhenScroll from "./effects/ShowWhenScroll";
-import TextGenerate from "./effects/TextGenerate";
-import TiltEffect from "./effects/TiltEffect";
+export { default as PageLoadingProgressBar } from "./effects/PageLoadingProgressBar";
+export { default as NavbarHideOnScroll } from "./effects/NavbarHideOnScroll";
+export { default as PageTransition } from "./effects/PageTransition";
+export { default as ShowWhenScroll } from "./effects/ShowWhenScroll";
+export { default as TextGenerate } from "./effects/TextGenerate";
+export { default as TiltEffect } from "./effects/TiltEffect";
 
 // MAIN
-import Footer from "./layout/Footer";
-import Navbar from "./layout/Navbar";
+export { default as Navbar } from "./layout/Navbar";
+export { default as Footer } from "./layout/Footer";
 
 // SUB
-import ProjectCard from "./sub/ProjectCart";
-import ConsoleLog from "./sub/ConsoleLog";
-import Skills from "./sub/Skills";
-import Social from "./layout/Social";
-import Title from "./layout/Title";
-import A from "./layout/A/A";
-
-// EXPORT
-export {
-   PageLoadingProgressBar,
-   NavbarHideOnScroll,
-   PageTransition,
-   ShowWhenScroll,
-   TextGenerate,
-   TiltEffect,
-   Footer,
-   Navbar,
-   ProjectCard,
-   ConsoleLog,
-   Skills,
-   Social,
-   Title,
-   A,
-};
+export { default as ProjectCard } from "./sub/ProjectCart";
+export { default as ConsoleLog } from "./sub/ConsoleLog";
+export { default as Skills } from "./sub/Skills";
+export { default as Social } from "./layout/Social";
+export { default as Title } from "./layout/Title";
+export { default as A } from "./layout/A/A";
+export { default as ShimmerButton } from "./sub/ShimmerButton";

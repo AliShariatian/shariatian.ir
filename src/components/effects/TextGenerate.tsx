@@ -21,7 +21,7 @@ const TextGenerate: FC<PropsType> = ({ words, delay = 0.2, className }): JSX.Ele
             opacity: 1,
          },
          {
-            duration: 2,
+            duration: 1,
             delay: stagger(delay),
          },
       );
