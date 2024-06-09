@@ -75,12 +75,15 @@ const AboutMePage: FC = (): JSX.Element => {
             </ShowWhenScroll>
 
             <ShowWhenScroll className="relative mx-auto flex flex-col items-center justify-center gap-24 xl:w-1/2">
+               {/* Download Resume Button */}
                <Link href="Ali Shariatian - Resume.pdf" target="_blank" className="z-40">
                   <ShimmerButton text={aboutMePageTexts.downloadMyResume} />
                </Link>
 
+               {/* Blur Circle Effect */}
                <div className="blurCircle absolute top-32 z-0 mx-auto" />
 
+               {/* Main and Phone number */}
                <div className="z-40 flex flex-col justify-center gap-20 *:flex *:flex-col *:items-center *:justify-center *:gap-7 xl:flex-row xl:gap-32">
                   <div>
                      <p className="text-xl font-bold">📧 به من ایمیل بده</p>
@@ -91,7 +94,7 @@ const AboutMePage: FC = (): JSX.Element => {
 
                   <div>
                      <p className="text-xl font-bold">📞 با یک تماس شروع کن</p>
-                     <a dir="ltr" href="tel:+4733378901" className="text-lg hover:underline">
+                     <a dir="ltr" href="tel:09114962339" className="text-lg hover:underline">
                         0911 496 2339
                      </a>
                   </div>

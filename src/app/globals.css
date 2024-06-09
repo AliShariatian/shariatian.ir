@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
 .blurCircle {
    width: 70%;
    height: 200px;
-   opacity: 0.2;
+   opacity: 0.1;
    border-radius: 50%;
    filter: blur(35px);
    background: radial-gradient(circle at center, white, transparent 40%),
