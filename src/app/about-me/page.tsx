@@ -8,6 +8,7 @@ import { aboutMePageTexts, metaTitle } from "@/public/data/persianTexts";
 import Link from "next/link";
 import Image from "next/image";
 import { Title, Skills, ProjectCard, ShowWhenScroll, TextGenerate, ShimmerButton } from "@/components";
+import CallToAction from "./parts/CallToAction";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
    description: "توسعه دهنده فرانت اند | برنامه نویس سایت | توسعه دهنده رابط کاربری | طراح سایت",
 };
 
-const AboutMePage: FC = (): JSX.Element => {
+const AboutMePage: FC = async (): Promise<JSX.Element> => {
    return (
       <div className="flex flex-col items-center justify-start pb-40">
          <main className="mb-28 w-full text-center">
@@ -68,39 +69,7 @@ const AboutMePage: FC = (): JSX.Element => {
             </ShowWhenScroll>
          </section>
 
-         {/* Contact with me */}
-         <section className="mb-0 w-full xl:mb-52">
-            <ShowWhenScroll className="mx-auto mb-28 mt-60 text-center">
-               <h4 className="text-4xl font-extrabold">{aboutMePageTexts.contactWithMeTitle}</h4>
-            </ShowWhenScroll>
-
-            <ShowWhenScroll className="relative mx-auto flex flex-col items-center justify-center gap-24 xl:w-1/2">
-               {/* Download Resume Button */}
-               <Link href="Ali Shariatian - Resume.pdf" target="_blank" className="z-40">
-                  <ShimmerButton text={aboutMePageTexts.downloadMyResume} />
-               </Link>
-
-               {/* Blur Circle Effect */}
-               <div className="blurCircle absolute top-32 z-0 mx-auto" />
-
-               {/* Main and Phone number */}
-               <div className="z-40 flex flex-col justify-center gap-20 *:flex *:flex-col *:items-center *:justify-center *:gap-7 xl:flex-row xl:gap-32">
-                  <div>
-                     <p className="text-xl font-bold">📧 به من ایمیل بده</p>
-                     <a href="mailto:shariatian92@gmail.com" className="text-lg hover:underline">
-                        Shariatian92@gmail.com
-                     </a>
-                  </div>
-
-                  <div>
-                     <p className="text-xl font-bold">📞 با یک تماس شروع کن</p>
-                     <a dir="ltr" href="tel:09114962339" className="text-lg hover:underline">
-                        0911 496 2339
-                     </a>
-                  </div>
-               </div>
-            </ShowWhenScroll>
-         </section>
+         <CallToAction />
       </div>
    );
 };

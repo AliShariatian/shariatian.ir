@@ -67,6 +67,12 @@ export const Frontend_skills: Frontend_skillType[] = [
       height: 55,
    },
    {
+      skill_name: "ShadCN UI",
+      image: "/img/skills/shadcn.svg",
+      width: 50,
+      height: 50,
+   },
+   {
       skill_name: "Progressive Web App",
       image: "/img/skills/pwa.svg",
       width: 85,

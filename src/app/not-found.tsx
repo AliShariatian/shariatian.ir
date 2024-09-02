@@ -3,7 +3,7 @@ import { FC } from "react";
 // UTIL
 import { warning404Text } from "@/public/data/persianTexts";
 // COMPONENT
-import { A } from "@/components";
+import { AppLink } from "@/components";
 // ---------------------------------
 
 const NotFound404Page: FC = (): JSX.Element => {
@@ -14,12 +14,12 @@ const NotFound404Page: FC = (): JSX.Element => {
          </span>
          <div className="flex flex-col items-center gap-7">
             <p className="text-lg">{warning404Text}</p>
-            <A
+            <AppLink
                href="/"
                className="rounded-xl bg-green-500 px-9 py-2 outline -outline-offset-4 outline-green-500 transition-[outline-offset] hover:outline-offset-4"
             >
                بـریـم
-            </A>
+            </AppLink>
          </div>
       </main>
    );

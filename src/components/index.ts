@@ -16,5 +16,5 @@ export { default as ConsoleLog } from "./sub/ConsoleLog";
 export { default as Skills } from "./sub/Skills";
 export { default as Social } from "./layout/Social";
 export { default as Title } from "./layout/Title";
-export { default as A } from "./layout/A/A";
+export { default as AppLink } from "./layout/AppLink";
 export { default as ShimmerButton } from "./sub/ShimmerButton";
