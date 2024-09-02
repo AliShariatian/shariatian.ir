@@ -10,7 +10,7 @@ export type ProjectType = {
 
 export const projects: ProjectType[] = [
    {
-      liveLink: "https://xshop.shariatian.ir",
+      liveLink: "https://x-shop-eight.vercel.app/",
       src: "/img/projects/xshop.webp",
       githubLink: "https://github.com/AliShariatian/xshop",
       title: "وبسایت فروشگاهی",
@@ -19,7 +19,7 @@ export const projects: ProjectType[] = [
       imgBgColor: "bg-gray-300",
    },
    {
-      liveLink: "https://atianabzar.ir/",
+      liveLink: "https://atian-abzar.vercel.app/",
       src: "/img/projects/atianabzar.webp",
       githubLink: "https://github.com/AliShariatian/AtianAbzar.ir",
       title: "آتیان ابزار",
@@ -28,7 +28,7 @@ export const projects: ProjectType[] = [
       imgBgColor: "bg-sky-300",
    },
    {
-      liveLink: "https://travel.shariatian.ir",
+      liveLink: "https://travel-landing-page-murex.vercel.app/",
       src: "/img/projects/travel.webp",
       githubLink: "https://github.com/AliShariatian/Travel-LandingPage",
       title: "لندینگ‌پیج مسافرتی",

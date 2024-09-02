@@ -16,16 +16,11 @@ export const socials: SocialType[] = [
       link: "https://github.com/AliShariatian",
    },
    {
-      name: "X",
-      src: "/img/social/x.svg",
-      link: "https://twitter.com/Ali_Shariatian",
+      name: "Gitlab",
+      src: "/img/social/gitlab.svg",
+      link: "https://gitlab.com/AliShariatian",
    },
 
-   {
-      name: "CodePen",
-      src: "/img/social/codepen.svg",
-      link: "https://codepen.io/AliShariatian",
-   },
    {
       name: "WakaTime",
       src: "/img/social/wakatime.svg",
