@@ -1,7 +1,7 @@
 import { FC } from "react";
 import ShowWhenScroll from "../effects/ShowWhenScroll";
 import { aboutMePageTexts } from "@/public/data/persianTexts";
-import ProjectCard from "./ProjectCart";
+import ProjectCard from "./ProjectCard";
 import { projects, ProjectType } from "@/public/data/projects";
 import { TiltEffect } from "@/components";
 

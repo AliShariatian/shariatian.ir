@@ -11,7 +11,7 @@ export type ProjectType = {
 export const projects: ProjectType[] = [
    {
       liveLink: "https://x-shop-eight.vercel.app/",
-      src: "/img/projects/xshop.webp",
+      src: "/img/projects/xshopcommerce.webp",
       githubLink: "https://github.com/AliShariatian/xshop",
       title: "وبسایت فروشگاهی",
       description: "طراحی فرانت‌اند فروشگاه خرید پوشاک",

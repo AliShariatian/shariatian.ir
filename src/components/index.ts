@@ -12,7 +12,7 @@ export { default as Navbar } from "./layout/Navbar";
 export { default as Footer } from "./layout/Footer";
 
 // SUB
-export { default as ProjectCard } from "./sub/ProjectCart";
+export { default as ProjectCard } from "./sub/ProjectCard";
 export { default as ConsoleLog } from "./sub/ConsoleLog";
 export { default as Skills } from "./sub/Skills";
 export { default as Social } from "./layout/Social";
