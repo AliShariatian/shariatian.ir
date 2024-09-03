@@ -6,7 +6,8 @@ import { usePathname } from "next/navigation";
 import { navbarItems, TNavbarItems } from "@/public/data/persianTexts";
 import { socials } from "@/public/data/social";
 // COMPONENT
-import { AppLink, Social, NavbarHideOnScroll } from "@/components";
+import { Social, NavbarHideOnScroll } from "@/components";
+import Link from "next/link";
 
 const Navbar: FC = (): JSX.Element => {
    const currentPath = usePathname();
@@ -27,13 +28,13 @@ const Navbar: FC = (): JSX.Element => {
                      }
 
                      return (
-                        <AppLink
+                        <Link
                            href={item.slug}
                            key={index}
                            className={`${currentPath === item.slug ? "!opacity-100" : ""} p-2 opacity-60 transition-opacity hover:opacity-100`}
                         >
                            <li>{item.title}</li>
-                        </AppLink>
+                        </Link>
                      );
                   }
                })}

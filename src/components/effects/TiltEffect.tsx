@@ -1,64 +1,28 @@
 "use client";
 
-import { FC, PropsWithChildren, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { cn } from "@/utils";
+import { CSSProperties, FC, PropsWithChildren } from "react";
+import Tilt, { TiltProps } from "react-parallax-tilt";
 
-type Props = { RotationRange?: number };
+interface IProps extends TiltProps {
+   className?: string;
+   style?: CSSProperties;
+}
 
-const TiltEffect: FC<PropsWithChildren<Props>> = ({ children, RotationRange = 20 }): JSX.Element => {
-   const HALF_ROTATION_RANGE = RotationRange / 2;
-
-   const ref = useRef<HTMLDivElement | null>(null);
-
-   const [rotateX, setRotateX] = useState<number>(0);
-   const [rotateY, setRotateY] = useState<number>(0);
-
-   const handleMouseMove = (ev: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-      if (!ref.current) return;
-
-      const rect = ref.current.getBoundingClientRect();
-
-      const width = rect.width;
-      const height = rect.height;
-
-      const mouseX = (ev.clientX - rect.left) * RotationRange;
-      const mouseY = (ev.clientY - rect.top) * RotationRange;
-
-      const rY = mouseX / width - HALF_ROTATION_RANGE;
-      const rX = (mouseY / height - HALF_ROTATION_RANGE) * -1;
-
-      setRotateX(rX);
-      setRotateY(rY);
-   };
-
-   const handleMouseLeave = () => {
-      if (!ref.current) return;
-      setRotateX(0);
-      setRotateY(0);
-   };
-
+const TiltEffect: FC<PropsWithChildren<IProps>> = ({
+   children,
+   tiltMaxAngleX = 10,
+   tiltMaxAngleY = 10,
+   className,
+   style,
+   ...props
+}): JSX.Element => {
    return (
-      <motion.div
-         ref={ref}
-         onMouseMove={handleMouseMove}
-         onMouseLeave={handleMouseLeave}
-         style={{
-            transformStyle: "preserve-3d",
-         }}
-         animate={{
-            rotateX,
-            rotateY,
-         }}
-      >
-         <div
-            style={{
-               transform: "translateZ(75px)",
-               transformStyle: "preserve-3d",
-            }}
-         >
+      <div className={cn(className)}>
+         <Tilt style={style} tiltMaxAngleX={tiltMaxAngleX} tiltMaxAngleY={tiltMaxAngleY} {...props}>
             {children}
-         </div>
-      </motion.div>
+         </Tilt>
+      </div>
    );
 };
 

@@ -2,13 +2,10 @@
 import type { Metadata } from "next";
 import { FC } from "react";
 // UTIL
-import { projects, ProjectType } from "@/public/data/projects";
 import { aboutMePageTexts, metaTitle } from "@/public/data/persianTexts";
 // COMPONENT
-import Link from "next/link";
 import Image from "next/image";
-import { Title, Skills, ProjectCard, ShowWhenScroll, TextGenerate, ShimmerButton } from "@/components";
-import CallToAction from "./parts/CallToAction";
+import { Title, Skills, Projects, ShowWhenScroll, TextGenerate, CallToAction, Experience } from "@/components";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
@@ -36,39 +33,9 @@ const AboutMePage: FC = async (): Promise<JSX.Element> => {
             />
          </ShowWhenScroll>
 
-         {/* Skills */}
-         <section className="mb-64 mt-52 flex w-full flex-col items-center justify-center">
-            <ShowWhenScroll className="mb-20">
-               <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.mainSkillsTitle}</h4>
-            </ShowWhenScroll>
-
-            <ShowWhenScroll>
-               <Skills />
-            </ShowWhenScroll>
-         </section>
-
-         {/* Projects */}
-         <section className="flex flex-col items-center justify-center">
-            <ShowWhenScroll className="mb-24">
-               <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.projectsTitle}</h4>
-            </ShowWhenScroll>
-
-            <ShowWhenScroll className="grid grid-cols-1 gap-14 px-5 xl:grid-cols-3 xl:gap-10 xl:px-20">
-               {projects.map((item: ProjectType) => (
-                  <ProjectCard
-                     key={item.liveLink}
-                     liveLink={item.liveLink}
-                     githubLink={item.githubLink}
-                     src={item.src}
-                     title={item.title}
-                     description={item.description}
-                     skills={item.skills}
-                     imgBgColor={item.imgBgColor}
-                  />
-               ))}
-            </ShowWhenScroll>
-         </section>
-
+         <Skills />
+         <Experience />
+         <Projects />
          <CallToAction />
       </div>
    );

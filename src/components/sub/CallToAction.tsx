@@ -1,8 +1,9 @@
 import { FC } from "react";
+import Image from "next/image";
+import { TiltEffect } from "@/components";
+import Avatar from "@/public/img/avatar.jpg";
 import { ShowWhenScroll } from "@/components";
 import { aboutMePageTexts } from "@/public/data/persianTexts";
-import Image from "next/image";
-import Avatar from "@/public/img/avatar.jpg";
 
 const CallToAction: FC = (): JSX.Element => {
    return (
@@ -11,13 +12,15 @@ const CallToAction: FC = (): JSX.Element => {
             <h4 className="text-center text-2xl font-extrabold xl:text-right">{aboutMePageTexts.contactWithMeTitle}</h4>
 
             <div className="mt-9 flex flex-col items-center gap-6 rounded-3xl xl:flex-row">
-               <Image
-                  src={Avatar}
-                  alt="Ali Shariatian"
-                  width={200}
-                  height={200}
-                  className="size-48 rounded-2xl transition-transform hover:scale-105"
-               />
+               <TiltEffect>
+                  <Image
+                     src={Avatar}
+                     alt="Ali Shariatian"
+                     width={200}
+                     height={200}
+                     className="size-48 rounded-2xl transition-transform hover:scale-105"
+                  />
+               </TiltEffect>
 
                <div className="flex flex-col gap-6 py-2">
                   <div>

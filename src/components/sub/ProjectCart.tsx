@@ -3,8 +3,7 @@ import { FC } from "react";
 import Image from "next/image";
 import { aboutMePageTexts } from "@/public/data/persianTexts";
 // COMPONENT
-import { AppLink } from "@/components";
-import { CardContainer } from "@/components/effects/ThreeDCard";
+import Link from "next/link";
 
 type Props = {
    src: string;
@@ -26,9 +25,9 @@ const ProjectCard: FC<Props> = ({
    imgBgColor = "bg-blue-200",
 }): JSX.Element => {
    return (
-      <CardContainer className="group/img relative overflow-hidden rounded-2xl border border-slate-900 bg-slate-950 shadow-2xl transition ease-out hover:border-slate-500/40 hover:shadow-slate-500/20">
+      <div className="group/img relative h-full overflow-hidden rounded-2xl border border-slate-900 bg-slate-950 shadow-2xl transition ease-out hover:border-slate-500/40 hover:shadow-slate-500/20">
          {/* Image */}
-         <AppLink href={liveLink} target="_blank" className="relative">
+         <Link href={liveLink} target="_blank" className="relative">
             <div className={`${imgBgColor} overflow-hidden rounded-2xl p-7`}>
                <Image
                   src={src}
@@ -44,23 +43,18 @@ const ProjectCard: FC<Props> = ({
             >
                <Image src="/img/external-link.svg" className="opacity-70" alt="Go to project" width={35} height={35} />
             </div>
-         </AppLink>
+         </Link>
 
          {/* Content */}
          <div className="relative mt-2 flex flex-col gap-3 p-5">
             <div className="flex flex-wrap justify-between gap-2">
-               <AppLink
-                  href={liveLink}
-                  target="_blank"
-                  title="رفتن به پروژه"
-                  className="w-fit transition-opacity hover:opacity-90"
-               >
+               <Link href={liveLink} target="_blank" title="رفتن به پروژه" className="w-fit transition-opacity hover:opacity-90">
                   <h2 className="text-2xl font-bold text-slate-100">{title}</h2>
-               </AppLink>
+               </Link>
 
                <div className="duration-400 flex gap-1 opacity-0 transition ease-out group-hover/img:opacity-100">
                   {/* Live link */}
-                  <AppLink href={liveLink} target="_blank" title="رفتن به پروژه" className="w-fit">
+                  <Link href={liveLink} target="_blank" title="رفتن به پروژه" className="w-fit">
                      <Image
                         src="/img/social/web.svg"
                         width={29}
@@ -68,9 +62,9 @@ const ProjectCard: FC<Props> = ({
                         alt="رفتن به پروژه"
                         className="cursor-pointer invert transition-opacity hover:opacity-90"
                      />
-                  </AppLink>
+                  </Link>
                   {/* Github link */}
-                  <AppLink href={githubLink} target="_blank" title="رفتن به گیتهاب پروژه" className="w-fit">
+                  <Link href={githubLink} target="_blank" title="رفتن به گیتهاب پروژه" className="w-fit">
                      <Image
                         src="/img/social/github.svg"
                         width={29}
@@ -78,7 +72,7 @@ const ProjectCard: FC<Props> = ({
                         alt="رفتن به گیتهاب پروژه"
                         className="cursor-pointer invert transition-opacity hover:opacity-90"
                      />
-                  </AppLink>
+                  </Link>
                </div>
             </div>
             <p className="text-slate-300">{description}</p>
@@ -95,7 +89,7 @@ const ProjectCard: FC<Props> = ({
                ))}
             </div>
          </div>
-      </CardContainer>
+      </div>
    );
 };
 

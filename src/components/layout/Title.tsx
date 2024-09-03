@@ -3,7 +3,7 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
 // COMPONENT
-import { TiltEffect } from "@/components";
+import { TiltMagnetEffect } from "@/components";
 
 type Props = {
    title: string;
@@ -22,7 +22,7 @@ const Title: FC<Props> = ({ title, classNames }): JSX.Element => {
             dragElastic={0.8}
             className="mx-auto w-fit cursor-default font-morabba text-3xl font-extrabold xl:text-6xl"
          >
-            <TiltEffect>{title}</TiltEffect>
+            <TiltMagnetEffect>{title}</TiltMagnetEffect>
          </motion.h2>
       </div>
    );

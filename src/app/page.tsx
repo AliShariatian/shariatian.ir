@@ -6,7 +6,7 @@ import { FC } from "react";
 import { HomePageTexts } from "@/public/data/persianTexts";
 // COMPONENT
 import { motion } from "framer-motion";
-import { TiltEffect } from "@/components";
+import { TiltMagnetEffect } from "@/components";
 // -------------------------------------------
 
 const HomePage: FC = (): JSX.Element => {
@@ -25,7 +25,7 @@ const HomePage: FC = (): JSX.Element => {
                   dragElastic={0.8}
                   className="mx-auto w-fit cursor-default font-morabba text-3xl font-extrabold xl:text-8xl"
                >
-                  <TiltEffect>{HomePageTexts.aliShariatian}</TiltEffect>
+                  <TiltMagnetEffect>{HomePageTexts.aliShariatian}</TiltMagnetEffect>
                </motion.h1>
             </div>
 
