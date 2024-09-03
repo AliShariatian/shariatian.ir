@@ -11,9 +11,9 @@ import { TiltMagnetEffect } from "@/components";
 
 const HomePage: FC = (): JSX.Element => {
    return (
-      <div className="mt-20 flex flex-col items-center justify-center xl:mt-9">
+      <div className="flex flex-col items-center justify-center xl:mt-9">
          {/* MAIN */}
-         <main className="w-full text-center">
+         <main className="absolute top-1/3 w-full text-center">
             <div className="relative text-ellipsis text-center">
                <span className="absolute -top-3 right-0 -z-10 w-full select-none font-morabba text-4xl font-bold text-slate-900 opacity-80 xl:-top-9 xl:text-9xl">
                   {HomePageTexts.aliShariatian}
