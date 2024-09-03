@@ -4,7 +4,7 @@ import { ExperienceCard, ShowWhenScroll } from "@/components";
 
 const Experience: FC = (): JSX.Element => {
    return (
-      <section className="mb-96 mt-20 flex w-full flex-col items-center justify-center">
+      <section className="mb-72 mt-20 flex w-full flex-col items-center justify-center">
          <ShowWhenScroll className="mb-20">
             <h4 className="text-4xl font-extrabold">تجربه‌ها</h4>
          </ShowWhenScroll>
