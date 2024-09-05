@@ -1,13 +1,9 @@
 "use client";
 
-// TYPE
 import { FC } from "react";
-// UTIL
-import { HomePageTexts } from "@/public/data/persianTexts";
-// COMPONENT
 import { motion } from "framer-motion";
 import { TiltMagnetEffect } from "@/components";
-// -------------------------------------------
+import { HomePageTexts } from "@/public/data/persianTexts";
 
 const HomePage: FC = (): JSX.Element => {
    return (

@@ -7,11 +7,11 @@ import { aboutMePageTexts } from "@/public/data/persianTexts";
 
 const CallToAction: FC = (): JSX.Element => {
    return (
-      <section className="mx-auto mb-28 mt-52 flex w-full rounded-2xl xl:mb-52 xl:w-2/5">
+      <section className="mx-auto mb-28 mt-52 flex w-full xl:mb-52 xl:w-2/5">
          <ShowWhenScroll className="relative w-full">
             <h4 className="text-center text-2xl font-extrabold xl:text-right">{aboutMePageTexts.contactWithMeTitle}</h4>
 
-            <div className="mt-9 flex flex-col items-center gap-6 rounded-3xl xl:flex-row">
+            <div className="mt-9 flex flex-col items-center gap-6 xl:flex-row">
                <TiltEffect>
                   <Image
                      src={Avatar}
@@ -23,14 +23,14 @@ const CallToAction: FC = (): JSX.Element => {
                </TiltEffect>
 
                <div className="flex flex-col gap-6 py-2">
-                  <div>
+                  <div className="flex flex-col items-start gap-1">
                      <p className="mt-2 text-lg font-bold">ایمیل</p>
                      <a href="mailto:shariatian92@gmail.com" className="text-base opacity-90 hover:underline">
                         Shariatian92@gmail.com
                      </a>
                   </div>
 
-                  <div>
+                  <div className="flex flex-col items-start gap-1">
                      <p className="mt-2 text-lg font-bold">تماس</p>
                      <a dir="ltr" href="tel:09114962339" className="text-base opacity-90 hover:underline">
                         0911 496 2339

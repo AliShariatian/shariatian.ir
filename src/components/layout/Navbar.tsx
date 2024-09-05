@@ -2,10 +2,8 @@
 
 import { FC } from "react";
 import { usePathname } from "next/navigation";
-// UTIL
 import { navbarItems, TNavbarItems } from "@/public/data/persianTexts";
 import { socials } from "@/public/data/social";
-// COMPONENT
 import { Social, NavbarHideOnScroll } from "@/components";
 import Link from "next/link";
 
@@ -31,9 +29,9 @@ const Navbar: FC = (): JSX.Element => {
                         <Link
                            href={item.slug}
                            key={index}
-                           className={`${currentPath === item.slug ? "!opacity-100" : ""} p-2 opacity-60 transition-opacity hover:opacity-100`}
+                           className={`${currentPath === item.slug ? "opacity-100" : "opacity-60"} transition-opacity hover:opacity-100`}
                         >
-                           <li>{item.title}</li>
+                           <li className="p-2">{item.title}</li>
                         </Link>
                      );
                   }

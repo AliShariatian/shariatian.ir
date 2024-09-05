@@ -11,7 +11,9 @@ const Experience: FC = (): JSX.Element => {
 
          <div className="flex w-full flex-col gap-9 max-xl:px-5 xl:w-1/3">
             {experiences.map((item, index) => (
-               <ExperienceCard key={index} {...item} />
+               <ShowWhenScroll key={index}>
+                  <ExperienceCard {...item} />
+               </ShowWhenScroll>
             ))}
          </div>
       </section>

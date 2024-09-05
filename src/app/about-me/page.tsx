@@ -1,12 +1,8 @@
-// TYPE
-import type { Metadata } from "next";
 import { FC } from "react";
-// UTIL
-import { aboutMePageTexts, metaTitle } from "@/public/data/persianTexts";
-// COMPONENT
 import Image from "next/image";
-import { Title, Skills, Projects, ShowWhenScroll, TextGenerate, CallToAction, Experience } from "@/components";
-// ---------------------------------------------------------------------------
+import type { Metadata } from "next";
+import { aboutMePageTexts, metaTitle } from "@/public/data/persianTexts";
+import { Title, Skills, Projects, ShowWhenScroll, CallToAction, Experience, Biography } from "@/components";
 
 export const metadata: Metadata = {
    title: `${metaTitle} درباره من`,
@@ -15,12 +11,12 @@ export const metadata: Metadata = {
 
 const AboutMePage: FC = async (): Promise<JSX.Element> => {
    return (
-      <div className="flex flex-col items-center justify-start pb-40">
-         <main className="mb-28 w-full text-center">
+      <main className="flex flex-col items-center justify-start pb-40">
+         <div className="mb-28 w-full text-center">
             <Title title={aboutMePageTexts.aboutMeTitle} />
-         </main>
+         </div>
 
-         <TextGenerate words={aboutMePageTexts.aboutMe} className="mx-auto px-9 xl:w-1/2 xl:px-5" />
+         <Biography />
 
          {/* Arrow */}
          <ShowWhenScroll>
@@ -37,7 +33,7 @@ const AboutMePage: FC = async (): Promise<JSX.Element> => {
          <Experience />
          <Projects />
          <CallToAction />
-      </div>
+      </main>
    );
 };
 

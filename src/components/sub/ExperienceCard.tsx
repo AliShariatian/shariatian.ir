@@ -1,11 +1,10 @@
 import { FC } from "react";
 import Image from "next/image";
-import { ShowWhenScroll } from "@/components";
 import { ExperienceType } from "@/public/data/experience";
 
 const ExperienceCard: FC<ExperienceType> = ({ endDate, imageSrc, learned, startDate, title }): JSX.Element => {
    return (
-      <ShowWhenScroll className="flex w-full items-start gap-6 rounded-2xl border border-slate-900 p-5 shadow-md">
+      <div className="flex w-full items-start gap-6 rounded-2xl border border-slate-900 p-5 shadow-md">
          <div className="flex size-20 shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-slate-700 xl:size-24">
             <Image
                src={imageSrc}
@@ -46,7 +45,7 @@ const ExperienceCard: FC<ExperienceType> = ({ endDate, imageSrc, learned, startD
                </div>
             </div>
          </div>
-      </ShowWhenScroll>
+      </div>
    );
 };
 

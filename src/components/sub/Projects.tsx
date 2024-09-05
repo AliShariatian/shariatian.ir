@@ -12,7 +12,7 @@ const Projects: FC = (): JSX.Element => {
             <h4 className="text-4xl font-extrabold">{aboutMePageTexts.projects.projectsTitle}</h4>
          </ShowWhenScroll>
 
-         <ShowWhenScroll className="grid grid-cols-1 gap-14 px-5 xl:grid-cols-3 xl:gap-10 xl:px-20">
+         <ShowWhenScroll className="mx-5 grid grid-cols-1 gap-14 xl:mx-44 xl:grid-cols-3 xl:gap-10">
             {projects.map((item: ProjectType) => (
                <TiltEffect key={item.liveLink} style={{ height: "100%" }}>
                   <ProjectCard

@@ -21,3 +21,4 @@ export { default as CallToAction } from "./sub/CallToAction";
 export { default as Experience } from "./sub/Experience";
 export { default as Projects } from "./sub/Projects";
 export { default as ExperienceCard } from "./sub/ExperienceCard";
+export { default as Biography } from "./sub/Biography";
