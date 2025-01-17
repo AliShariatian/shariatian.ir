@@ -6,44 +6,44 @@ import { TiltMagnetEffect } from "@/components";
 import { HomePageTexts } from "@/public/data/persianTexts";
 
 const HomePage: FC = (): JSX.Element => {
-   return (
-      <div className="flex flex-col items-center justify-center xl:mt-9">
-         {/* MAIN */}
-         <main className="absolute top-1/3 w-full text-center">
-            <div className="relative text-ellipsis text-center">
-               <span className="absolute -top-3 right-0 -z-10 w-full select-none font-morabba text-4xl font-bold text-slate-900 opacity-80 xl:-top-9 xl:text-9xl">
-                  {HomePageTexts.aliShariatian}
-               </span>
+  return (
+    <div className="flex flex-col items-center justify-center xl:mt-9">
+      {/* MAIN */}
+      <main className="absolute top-1/3 w-full text-center">
+        <div className="relative text-ellipsis text-center">
+          <span className="absolute -top-3 right-0 -z-10 w-full select-none font-morabba text-4xl font-bold text-slate-900 opacity-80 xl:-top-9 xl:text-9xl">
+            {HomePageTexts.aliShariatian}
+          </span>
 
-               <motion.h1
-                  drag
-                  dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
-                  dragElastic={0.8}
-                  className="mx-auto w-fit cursor-default font-morabba text-3xl font-extrabold xl:text-8xl"
-               >
-                  <TiltMagnetEffect>{HomePageTexts.aliShariatian}</TiltMagnetEffect>
-               </motion.h1>
-            </div>
+          <motion.h1
+            drag
+            dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+            dragElastic={0.8}
+            className="mx-auto w-fit cursor-default font-morabba text-3xl font-extrabold xl:text-8xl"
+          >
+            <TiltMagnetEffect>{HomePageTexts.aliShariatian}</TiltMagnetEffect>
+          </motion.h1>
+        </div>
 
-            <motion.p
-               drag
-               dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
-               dragElastic={0.8}
-               className="mt-9 cursor-default px-5 font-dana text-base font-light text-slate-300 opacity-[0.7] xl:mt-12 xl:px-0 xl:text-lg"
-            >
-               {HomePageTexts.description}
-            </motion.p>
+        <motion.p
+          drag
+          dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+          dragElastic={0.8}
+          className="mt-9 cursor-default px-5 font-dana text-base font-light text-slate-300 opacity-[0.7] xl:mt-12 xl:px-0 xl:text-lg"
+        >
+          {HomePageTexts.description}
+        </motion.p>
 
-            {/* Gradient line */}
-            <div className="relative -z-10 mx-auto mt-1 flex flex-col items-center justify-center opacity-30 *:mx-auto">
-               <div className="absolute top-0 h-[2px] w-10/12 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm xl:w-1/4" />
-               <div className="absolute top-0 h-px w-10/12 bg-gradient-to-r from-transparent via-indigo-500 to-transparent xl:w-2/4" />
-               <div className="absolute top-0 h-[5px] w-10/12 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm xl:w-1/4" />
-               <div className="absolute top-0 h-px w-10/12 bg-gradient-to-r from-transparent via-sky-500 to-transparent xl:w-1/4" />
-            </div>
-         </main>
-      </div>
-   );
+        {/* Gradient line */}
+        <div className="relative -z-10 mx-auto mt-1 flex flex-col items-center justify-center opacity-30 *:mx-auto">
+          <div className="absolute top-0 h-[2px] w-10/12 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm xl:w-1/4" />
+          <div className="absolute top-0 h-px w-10/12 bg-gradient-to-r from-transparent via-indigo-500 to-transparent xl:w-2/4" />
+          <div className="absolute top-0 h-[5px] w-10/12 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm xl:w-1/4" />
+          <div className="absolute top-0 h-px w-10/12 bg-gradient-to-r from-transparent via-sky-500 to-transparent xl:w-1/4" />
+        </div>
+      </main>
+    </div>
+  );
 };
 
 export default HomePage;

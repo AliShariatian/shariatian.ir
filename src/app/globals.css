@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.bb {
+   box-shadow: 0 0 0 1px red;
+}
+
 :root {
    color-scheme: dark;
    --slate950: #020617;
