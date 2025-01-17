@@ -6,11 +6,6 @@ export type SocialType = {
 
 export const socials: SocialType[] = [
   {
-    name: "Linkedin",
-    src: "/img/social/linkedin.svg",
-    link: "https://linkedin.com/in/AliShariatian",
-  },
-  {
     name: "Github",
     src: "/img/social/github.svg",
     link: "https://github.com/AliShariatian",
@@ -19,6 +14,11 @@ export const socials: SocialType[] = [
     name: "Gitlab",
     src: "/img/social/gitlab.svg",
     link: "https://gitlab.com/AliShariatian",
+  },
+  {
+    name: "Linkedin",
+    src: "/img/social/linkedin.svg",
+    link: "https://linkedin.com/in/AliShariatian",
   },
   {
     name: "WakaTime",

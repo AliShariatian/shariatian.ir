@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { FC, PropsWithChildren } from "react";
 // FONT
-import { danaFont, jetBrainsFont, morabbaFont } from "@/public/font";
+import { danaFont, jetBrainsFont, morabbaFont } from "@/assets/font";
 // STYLE
 import "./globals.css";
 // COMPONENT
